@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/icon_sucess"
+            android:layout_width="30dp"
+            android:layout_margin="15dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:text="已发布成功！请等待审核"
+            android:textSize="@dimen/text_size_19sp"
+            android:textColor="@color/text_color_black"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:text="请等待客服审核，平台会在3个工作日内进行审核，审核结果将以系统通知的方式通知到您，提交后请关注。"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:textSize="@dimen/text_size_17sp"
+        android:textColor="@color/color_text_78"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="88dp">
+
+        <TextView
+            android:id="@+id/tv_return"
+            android:text="返回"
+            style="@style/margin_l_r_10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/color_white"
+            android:layout_marginBottom="8dp"
+            android:layout_width="220dp"
+            android:gravity="center"
+            android:background="@drawable/shape_btn_them_deep_bg"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

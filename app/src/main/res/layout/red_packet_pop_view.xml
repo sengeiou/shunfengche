@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lay_ll_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_hb_bg"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+
+            <com.windmillsteward.jukutech.customview.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/icon_head_n" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:text="我是标题"
+                android:textColor="#ffb919"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dip"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="恭喜发财，大吉大利"
+            android:textColor="#ffb919"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:src="@mipmap/icon_hb_open" />
+
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dip"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="查看大家手气"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dip"
+        android:src="@mipmap/icon_hb_close" />
+</LinearLayout>

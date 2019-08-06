@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:drawableTop="@mipmap/icon_withdraw_success"
+            android:text="提现申请已提交"
+            android:textColor="@color/text_color_black" />
+
+        <com.windmillsteward.jukutech.utils.StateButton
+            android:id="@+id/btn_back"
+            android:layout_width="136dp"
+            android:layout_height="@dimen/button_hight_42"
+            android:layout_marginTop="50dp"
+            android:text="返回"
+            android:textColor="@color/color_them_deep"
+            app:normalStrokeColor="@color/color_them_deep"
+            app:normalStrokeWidth="1px"
+            app:pressedStrokeColor="@color/color_them_deep"
+            app:pressedStrokeWidth="1px"
+            app:radius="1dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:text="全部"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/text_color_black"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_present"
+            android:text="人才驿站"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_idea"
+            android:text="思想智库"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_family"
+            android:text="智慧生活"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_house"
+            android:text="房屋租售"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_travel"
+            android:text="旅游住宿"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:visibility="visible"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_insurance"
+            android:text="大健康"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_legal"
+            android:text="法律专家"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_capital"
+            android:text="资本管理"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_car"
+            android:text="车辆管理"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:visibility="visible"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=""
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=""
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:padding="8dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

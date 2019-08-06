@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/playSurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:src="@mipmap/icon_play"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="62dp"
+        android:layout_height="62dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:background="@color/color_them_alpha"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:text="重录"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textColor="@color/text_color_black"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="0.5dp"
+            android:background="@color/color_divider"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_send"
+            android:text="发送"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textColor="@color/text_color_black"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</FrameLayout>

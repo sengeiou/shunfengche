@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.newpage.customerservice.activity.HomeCustomerActivity">
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_bg_bg"
+        android:drawableLeft="@mipmap/icon_search"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:text="搜索服务"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_bg" />
+
+    <TextView
+        android:id="@+id/tv_fujin"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="19dp"
+        android:textSize="@dimen/text_size_17sp"
+        android:text="我的附近"
+        android:textColor="#394043"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:tabIndicatorColor="#3172f4"
+        app:tabSelectedTextColor="#3172f4"
+        app:tabTextColor="@color/color_666666"/>
+
+    <include layout="@layout/view_line" />
+</LinearLayout>

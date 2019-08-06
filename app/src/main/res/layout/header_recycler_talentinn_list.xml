@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/header_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_bg" />
+
+    <com.windmillsteward.jukutech.customview.FlyBanner
+        android:id="@+id/flyBanner"
+        android:layout_width="match_parent"
+        android:layout_height="133dp" />
+
+</LinearLayout>

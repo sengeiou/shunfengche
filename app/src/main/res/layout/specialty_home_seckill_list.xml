@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_hight_42">
+
+        <TextView
+            android:id="@+id/tv_kill_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="秒 杀"
+            android:textColor="@color/color_red"
+            android:textStyle="bold" />
+        <!-- 时间显示区域 -->
+        <TextView
+            android:id="@+id/tv_kill_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/tv_kill_tag"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon_gray_arrow_right"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/color_text_999" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:id="@+id/lay_ll_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mViewpager"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_bg_f0f0" />
+
+</LinearLayout>

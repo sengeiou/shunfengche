@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="cn.beecloud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="39"
+    android:versionName="2.10.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:background="@drawable/shape_wenxintishi"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <com.windmillsteward.jukutech.customview.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/default_avatar" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#394043"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/tv_pipei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#394043"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text=""
+                    android:textColor="#9399a5"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text=""
+                    android:textColor="#9399a5"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="71dp"
+                android:src="@mipmap/yellow_phone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

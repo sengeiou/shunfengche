@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_bg_f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_padding_50"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_15sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="请如实填写"
+            android:textColor="@color/color_text_b3"
+            android:textSize="@dimen/text_size_15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:background="@color/color_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝账号"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_15sp" />
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="请输入支付宝账号"
+            android:text=""
+            android:textColor="@color/color_text_b3"
+            android:textSize="@dimen/text_size_15sp" />
+    </LinearLayout>
+
+    <com.windmillsteward.jukutech.utils.StateButton
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_hight_42"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:text="添加"
+        android:textColor="@android:color/white"
+        app:normalBackgroundColor="@color/text_blue"
+        app:pressedBackgroundColor="@color/text_blue"
+        app:radius="20dp" />
+</LinearLayout>

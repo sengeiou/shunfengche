@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#394043"
+    android:layout_height="match_parent"
+    tools:context=".activity.newpage.me.ErweimaFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_marginTop="68dp"
+        android:background="@color/white"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:id="@+id/tv_erweima"
+            android:src="@mipmap/erweima"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
+
+        <TextView
+            android:layout_marginBottom="24dp"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_18sp"
+            android:text="扫一扫 有惊喜"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

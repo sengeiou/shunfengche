@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:text="全部订单"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/text_color_black"
+            android:layout_margin="5dp"
+            android:layout_height="31dp" />
+        <TextView
+            android:id="@+id/tv_travel"
+            android:text="住宿旅游"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:layout_height="31dp" />
+        <TextView
+            android:id="@+id/tv_family"
+            android:text="智慧生活"
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:layout_height="31dp" />
+        <TextView
+            android:text=""
+            android:background="@drawable/shape_buyhouse_popup_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_margin="5dp"
+            android:textColor="@color/text_color_black"
+            android:layout_height="31dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

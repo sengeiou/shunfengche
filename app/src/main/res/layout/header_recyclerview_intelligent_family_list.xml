@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_quick_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="快速下单"
+        android:textColor="#394043"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/header_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/color_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="快速查找"
+        android:textColor="#394043"
+        android:background="@color/white"
+        android:layout_marginBottom="-10dp"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <include layout="@layout/view_select_linear" />
+
+</LinearLayout>

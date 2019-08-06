@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/color_white"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_position_title"
+                android:textSize="@dimen/text_size_16sp"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:text=""
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_price"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_refresh_time"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:textColor="@color/color_text_78"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_read_times"
+                    android:text=""
+                    android:textSize="@dimen/text_size_12sp"
+                    android:textColor="@color/color_text_78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/color_divider"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_position_name"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_work_year"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_edu"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_require"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content" />
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="福利："&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="@color/text_color_black"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="@dimen/text_size_14sp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<com.windmillsteward.jukutech.customview.FlowLayout&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:id="@+id/fl_welfare_type"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;</com.windmillsteward.jukutech.customview.FlowLayout>&ndash;&gt;-->
+
+
+
+                <!--</LinearLayout>-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/color_them_alpha"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="工作区域"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_work_area"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/color_them_alpha"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="职位描述"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <com.windmillsteward.jukutech.customview.ExpandTextView
+                android:id="@+id/expand_more"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                app:contentTextSize="@dimen/text_size_14sp"
+                app:textContentColor="@color/text_color_black"
+                app:expandHint="查看更多"
+                app:hintTextSize="@dimen/text_size_14sp"
+                app:foldHint="收起"
+                app:textHintColor="@color/color_23abac"
+                app:minVisibleLines="5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:background="@color/color_them_alpha"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="联系信息"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_23abac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_company_name"-->
+                    <!--android:text=""-->
+                    <!--android:textSize="@dimen/text_size_14sp"-->
+                    <!--android:textColor="@color/text_color_black"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_approve_type"-->
+                    <!--android:src="@mipmap/icon_certified"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="16dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:text=""
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_14sp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="联系电话:"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_call"
+                    android:text="点击拨打"
+                    android:background="@drawable/shape_text_call"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="@dimen/text_size_11sp"
+                    android:padding="3dp"
+                    android:textColor="@color/color_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_apply"
+        android:text="申请"
+        android:background="@color/color_them_deep"
+        android:textSize="@dimen/text_size_16sp"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="46dp" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:paddingTop="3dp"
+    android:orientation="vertical">
+
+    <com.windmillsteward.jukutech.customview.MyGridView
+        android:id="@+id/gv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:horizontalSpacing="12dp"
+        android:numColumns="3"
+        android:verticalSpacing="12dp"></com.windmillsteward.jukutech.customview.MyGridView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/color_bg_f0f0"/>
+</LinearLayout>

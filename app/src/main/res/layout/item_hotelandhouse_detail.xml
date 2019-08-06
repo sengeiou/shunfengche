@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/color_white"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/tv_room_name"
+            android:text="标准大床房"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/text_color_black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical|right"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_true_price"
+                android:text="300"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_raw_price"
+                android:text="200"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/text_size_12sp"
+                android:textColor="@color/color_ccc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_reserve"
+            android:text="预订"
+            android:background="@drawable/shape_btn_reserve_bg"
+            android:layout_width="52dp"
+            android:textSize="@dimen/text_size_12sp"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_divider"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

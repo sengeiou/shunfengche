@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="93dp">
+
+        <LinearLayout
+            android:layout_width="112dp"
+            android:gravity="center"
+            android:background="@mipmap/icon_coupon_used_n"
+            android:layout_height="match_parent" >
+            <TextView
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/color_white"
+                android:text="￥"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:text=""
+                android:textSize="35sp"
+                android:textColor="@color/color_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_choicecoupon_list"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:text=""
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="●"
+                        android:textColor="@color/color_8e8e8e"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:text=""
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:textColor="@color/color_8e8e8e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:src="@mipmap/icon_select"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:layout_width="37dp"
+                android:layout_height="37dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+
+    android:paddingBottom="20dp">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/line_cdd4dc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.windmillsteward.jukutech.customview.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text=""
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_17sp" />
+
+                <TextView
+                    android:id="@+id/tv_sex_and_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="4dp"
+                    android:text=""
+                    android:textColor="@color/color_text_666"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text=""
+                    android:textColor="#5f87ab"
+                    android:textSize="@dimen/text_size_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:id="@+id/tv_diqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_edu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:id="@+id/tv_work_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="7"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  |  "
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_xinzi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="8"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/text_ff8819"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+
+                <TextView
+                    android:id="@+id/tv_apply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_text_white_bg_r4_stro_3172f4"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="查看"
+                    android:textColor="@color/common_color"
+                    android:textSize="@dimen/text_size_12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

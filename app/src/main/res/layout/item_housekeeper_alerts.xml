@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_bg_f0f0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lay_ll_tag"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="标题"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_15sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_default_pic" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lay_ll_tag"
+            android:layout_marginLeft="15dp"
+            android:text="日期"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

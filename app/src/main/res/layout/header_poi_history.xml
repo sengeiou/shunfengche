@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/color_white"
+        android:layout_height="45dp">
+
+        <TextView
+            android:text="历史记录"
+            android:textSize="@dimen/text_size_13sp"
+            android:textColor="@color/text_color_black"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_clear"
+            android:text="清除"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="@dimen/text_size_13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:background="@color/color_bg_f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+</LinearLayout>

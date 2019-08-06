@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_wenxintishi"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <com.windmillsteward.jukutech.customview.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/default_avatar" />
+
+            <TextView
+                android:id="@+id/tv_name_and_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:text="张晓明  35岁"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_pipei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/tv_name_and_age"
+                android:text="匹配度：80%"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <LinearLayout
+                android:id="@+id/lay_ll_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name_and_age"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_diqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="淄博张店区"
+                    android:textColor="#5f87ab"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="|"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_edu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="本科"
+                    android:textColor="#5f87ab"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lay_ll_address"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:text="面议"
+                    android:textColor="@color/color_3fd5c2"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="|"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_zhiwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="java"
+                    android:textColor="@color/text_ff8819"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/icon_jump_black" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_cdd4dc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/tv_evalution"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_bg_white_sto_red_fe7171"
+                android:drawablePadding="0dp"
+                android:gravity="center"
+                android:text="评价"
+                android:visibility="gone"
+                android:textColor="#fe7171"
+                android:textSize="@dimen/text_size_12sp" />
+            <TextView
+                android:id="@+id/tv_interestring"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_text_white_bg_stro_ff8819"
+                android:drawablePadding="0dp"
+                android:gravity="center"
+                android:text="不感兴趣"
+                android:textColor="#ff8819"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_call_phone"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_text_white_bg_r4_stro_3172f4"
+                android:drawablePadding="0dp"
+                android:gravity="center"
+                android:text="获取联系方式"
+                android:textColor="#3172f4"
+                android:textSize="@dimen/text_size_12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_creat" />
+
+        <com.windmillsteward.jukutech.utils.StateButton
+            android:id="@+id/btn_creat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_hight_42"
+            android:layout_alignParentBottom="true"
+            android:text="添加新地址"
+            android:textColor="@android:color/white"
+            app:normalBackgroundColor="@color/color_1a6d86"
+            app:pressedBackgroundColor="@color/color_1a6d86" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg_f0f0"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_date"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:background="@drawable/shape_retangle_circle_r6_bg_dark_gray"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:paddingLeft="20dp"-->
+    <!--android:paddingRight="20dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:text=""-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="@dimen/text_size_12sp" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/shape_retangle_circle_r3_bg_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:text="温馨提示"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text=""
+                android:textColor="@color/common_google_signin_btn_text_light_default"
+                android:textSize="@dimen/text_size_12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="温馨提示"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_bg_f0f0" />
+
+        <RelativeLayout
+            android:id="@+id/lay_rl_look"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_fafafa">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="点击查看"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/icon_jump_black" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

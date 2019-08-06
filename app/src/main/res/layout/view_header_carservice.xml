@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <com.windmillsteward.jukutech.customview.FlyBanner
+            android:id="@+id/fl_banner"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="133dp" />
+
+        <com.windmillsteward.jukutech.customview.MyGridView
+            android:id="@+id/myGridView1"
+            android:layout_width="match_parent"
+            android:numColumns="4"
+            android:layout_marginTop="15dp"
+            android:horizontalSpacing="5dp"
+            android:layout_height="wrap_content"/>
+        <com.windmillsteward.jukutech.customview.MyGridView
+            android:id="@+id/myGridView2"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:numColumns="4"
+            android:horizontalSpacing="5dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_look_all"
+            android:text="查看全部车源"
+            android:textColor="@color/color_5eadb5"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:background="@drawable/shape_header_carservice_lookmore_bg"
+            android:layout_marginRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@mipmap/img_cainixihuan"
+        android:layout_width="match_parent"
+        android:scaleType="centerInside"
+        android:background="@color/color_bg_f0f0"
+        android:layout_marginBottom="10dp"
+        android:layout_height="35dp" />
+
+
+</LinearLayout>

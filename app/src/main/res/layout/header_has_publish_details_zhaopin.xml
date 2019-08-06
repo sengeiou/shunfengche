@@ -1,0 +1,388 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/color_bg"
+        android:fillViewport="true"
+        tools:context="com.windmillsteward.jukutech.activity.newpage.yizhan.zhongjie_tgz.YonggongDetailFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单编号"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_bianhao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="224562312342352"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标题"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_biaoti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="岗位名称"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_gangwei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="招聘水泥工3名，装修工5名"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="招聘人数"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_renshu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:lineSpacingExtra="5dp"
+                    android:text="2"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="年龄"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_nianling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:lineSpacingExtra="5dp"
+                    android:text="张店区"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="学历"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_xueli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="工作经验"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_jingyan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:lineSpacingExtra="5dp"
+                    android:text="张店区"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:id="@+id/lay_ll_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="公司地址"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/location"
+                    android:gravity="right"
+                    android:lineSpacingExtra="5dp"
+                    android:text="科学大道中11号"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="月薪"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_daiyu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="福利"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_fuli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:lineSpacingExtra="5dp"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <include layout="@layout/view_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp"
+                android:text="职位描述"
+                android:textColor="#394043"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="如果你无法简洁的表达你的想法，那只说明你还不够了解它。如果你无法简洁的表达你的想法，那只说明你还不够了解它。如果你无法简洁的表达你的想法，那只说明你还不够了解它。"
+                android:textColor="#9399a5"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="费用"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_feiyong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:lineSpacingExtra="5dp"
+                    android:text="张店区"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

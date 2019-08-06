@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_them"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/toolbar_height">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:src="@mipmap/icon_back"
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_toolbar_input_bg"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp" >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:hint="请输入类别或关键字"
+                android:textSize="@dimen/text_size_14sp"
+                android:background="@drawable/shape_toolbar_input_bg"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:text="搜索"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="visible"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@color/color_bg_f0f0">
+
+        <TextView
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_black"
+            android:text="请选择类别"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_travel"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="旅游"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/text_color_black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_travel_num"
+            android:text="0条信息"
+            android:drawableRight="@mipmap/icon_jump"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/text_color_black"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <include layout="@layout/view_line_marginleft_15"/>
+    <LinearLayout
+        android:id="@+id/linear_hotel"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="酒店"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/text_color_black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_hotel_num"
+            android:text="0条信息"
+            android:drawableRight="@mipmap/icon_jump"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/text_color_black"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

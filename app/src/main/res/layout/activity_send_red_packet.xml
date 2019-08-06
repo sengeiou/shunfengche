@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_padding_50"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/shape_retangle_circle_r8_bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_money_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_duihuan"
+            android:drawablePadding="5dp"
+            android:text="总金额"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_weight="1"
+            android:maxLength="5"
+            android:gravity="right"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="元"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_hb_type_tips"
+        android:layout_width="wrap_content"
+        android:text="当前为拼手气红包，"
+        android:textColor="@color/text_color_black"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_hb_type"
+            android:layout_width="wrap_content"
+            android:text="改为普通红包"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/color_ffa800"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_ll_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_padding_50"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/shape_retangle_circle_r8_bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:text="红包个数"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <EditText
+            android:id="@+id/et_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:maxLength="3"
+            android:hint="填写个数"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="个"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_padding_50"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/shape_retangle_circle_r8_bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="恭喜发财，大吉大利"
+            android:maxLength="10"
+            android:padding="5dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="个"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="¥"
+            android:textColor="@color/text_black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_show_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0.00"
+            android:textColor="@color/text_black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.windmillsteward.jukutech.utils.StateButton
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_hight_42"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:text="塞钱进红包"
+        android:textColor="@color/white"
+        app:normalBackgroundColor="@color/color_red"
+
+        app:pressedBackgroundColor="@color/color_red"
+        app:radius="4dp" />
+</LinearLayout>

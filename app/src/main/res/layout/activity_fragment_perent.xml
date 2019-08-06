@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/color_white"
+        android:layout_height="45dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_position"
+                android:text="职位"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/view_position"
+                android:layout_width="30dp"
+                android:background="@color/color_price"
+                android:layout_height="2dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_resume"
+                android:text="简历"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/view_resume"
+                android:layout_width="30dp"
+                android:visibility="invisible"
+                android:background="@color/color_price"
+                android:layout_height="2dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_bg_f0f0"
+        android:layout_height="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

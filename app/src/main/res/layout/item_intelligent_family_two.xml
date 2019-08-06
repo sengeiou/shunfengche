@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#dde2e7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.windmillsteward.jukutech.customview.CircleImageView
+            android:id="@+id/civ_header"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_default_pic" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_17sp"
+            android:textStyle="bold"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/margin_l_r_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="#f86166"
+            android:textSize="@dimen/text_size_11sp"
+            tools:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        android:paddingRight="16dp"
+        android:maxLines="2"
+        android:paddingBottom="10dp"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/text_size_13sp"
+        tools:text="" />
+
+    <LinearLayout
+        android:id="@+id/lay_ll_pic"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_play"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_image2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_image3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_image4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/location" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="#5f87ab"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:id="@+id/tv_range"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text=""
+            android:textColor="#9399a5"
+            android:textSize="@dimen/text_size_11sp" />
+
+
+        <TextView
+            android:id="@+id/tv_get_order"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_toorder"
+            android:gravity="center"
+            android:paddingLeft="9dp"
+            android:paddingTop="4dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="4dp"
+            android:text="抢单"
+            android:textColor="#3172f4"
+            android:textSize="@dimen/text_size_11sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

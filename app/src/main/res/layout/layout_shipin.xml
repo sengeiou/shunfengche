@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="23dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.windmillsteward.jukutech.customview.CircleImageView
+                android:id="@+id/iv_video"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_video" />
+
+            <ImageView
+                android:id="@+id/iv_delete_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_toRightOf="@id/iv_video"
+                android:paddingLeft="0dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:src="@mipmap/cancel" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_video"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="添加视频会有更多人看到"
+            android:textColor="@color/color_text_666"
+            android:textSize="@dimen/text_size_14sp" />
+
+
+    </LinearLayout>
+</merge>

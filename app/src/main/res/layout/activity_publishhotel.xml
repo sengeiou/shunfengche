@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/color_white"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="247dp">
+                <ImageView
+                    android:src="@mipmap/img_uploadbg01"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="247dp" />
+
+                <ImageView
+                    android:id="@+id/iv_pic"
+                    android:src="@mipmap/icon_up_photo"
+                    android:layout_width="97dp"
+                    android:layout_gravity="center"
+                    android:layout_height="97dp" />
+
+                <TextView
+                    android:id="@+id/tv_click_upload"
+                    android:layout_gravity="center"
+                    android:text="点击上传图片"
+                    android:layout_marginTop="70dp"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:textColor="@color/color_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/color_bg_f0f0"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="基本信息"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="酒店名称"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_house_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_text_b3"
+                    android:hint="输入酒店名称"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="星级"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_house_type"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:hint="请选择"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_black"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="开业时间"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:hint="选择时间"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_black"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="客服电话"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_customer_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:textColorHint="@color/color_text_b3"
+                    android:hint="请输入客服电话"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="区域"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:hint="请选择区域"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_black"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="详细地址"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:visibility="invisible"
+                    android:maxLength="60"
+                    android:textColor="@color/color_text_b3"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_address"
+                android:background="@drawable/shape_push_hotel_select_bg"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:maxLength="60"
+                android:lines="8"
+                android:gravity="top"
+                android:textSize="@dimen/text_size_14sp"
+                android:padding="10dp"
+                android:hint="输入详细地址"
+                android:layout_marginBottom="12dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/color_bg_f0f0"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="酒店设施（多选）"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <TextView
+                android:text="公共设施"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="14dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.windmillsteward.jukutech.customview.flowlayout.TagFlowLayout
+                android:id="@+id/tfl_common"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="客房设施"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="14dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.windmillsteward.jukutech.customview.flowlayout.TagFlowLayout
+                android:id="@+id/tfl_custom"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="活动设施"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="14dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.windmillsteward.jukutech.customview.flowlayout.TagFlowLayout
+                android:id="@+id/tfl_activity"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="酒店服务"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="14dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.windmillsteward.jukutech.customview.flowlayout.TagFlowLayout
+                android:id="@+id/tfl_hotel_service"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/color_bg_f0f0"
+                android:layout_marginTop="18dp"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="酒店政策"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="离店时间"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_leave_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:hint="选择"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_black"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="膳食安排"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_food_plan"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:hint="有"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_black"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="宠物"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_pet"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:hint="不可携带"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_black"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/color_bg_f0f0"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="预定房间设置"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="预定房间"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_reserve"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:hint="收取定金"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_black"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/color_bg_f0f0"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="酒店介绍"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_house_desc"
+                android:background="@drawable/shape_push_hotel_select_bg"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:maxLength="200"
+                android:lines="8"
+                android:gravity="top"
+                android:layout_marginTop="12dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:padding="10dp"
+                android:hint="输入酒店介绍，如：连锁酒店，干净卫生"
+                android:layout_marginBottom="12dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:background="@color/color_bg_f0f0"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="以下资料仅用于平台审核，不外传"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="负责人"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_text_b3"
+                    android:hint="输入负责人"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="手机号"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_text_b3"
+                    android:hint="输入手机号"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@color/color_fafafa"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_license"
+                    android:layout_width="184dp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_license"
+                    android:layout_height="107dp" />
+
+                <TextView
+                    android:text="*请上传营业执照"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_text_b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_idcard"
+                    android:layout_width="184dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@mipmap/icon_id"
+                    android:scaleType="centerCrop"
+                    android:layout_height="107dp" />
+
+                <TextView
+                    android:text="*请上传法人身份证正面"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_text_b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_idcard_b"
+                    android:layout_width="184dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@mipmap/icon_id_b"
+                    android:scaleType="centerCrop"
+                    android:layout_height="107dp" />
+
+                <TextView
+                    android:text="*请上传法人身份证反面"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_text_b3"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/color_bg_f0f0"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="发布地区"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_publish_area"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:hint="选择地区"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_black"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_bg_f0f0"
+                android:gravity="center_horizontal"
+                android:layout_height="110dp">
+
+                <TextView
+                    android:id="@+id/tv_publish"
+                    android:text="发布"
+                    android:gravity="center"
+                    android:layout_width="218dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="@dimen/text_size_17sp"
+                    android:background="@drawable/shape_btn_them_deep_bg"
+                    android:textColor="@color/color_white"
+                    android:layout_height="42dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

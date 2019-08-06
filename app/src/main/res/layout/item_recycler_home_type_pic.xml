@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="17dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="管家推荐"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_pic1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/test_pic01" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <com.windmillsteward.jukutech.customview.SquareLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/iv_pic2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/test_pic02" />
+        </com.windmillsteward.jukutech.customview.SquareLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.windmillsteward.jukutech.customview.SquareLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_pic3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/test_pic02" />
+
+        </com.windmillsteward.jukutech.customview.SquareLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <com.windmillsteward.jukutech.customview.SquareLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_pic4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/test_pic02" />
+        </com.windmillsteward.jukutech.customview.SquareLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <com.windmillsteward.jukutech.customview.SquareLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_pic5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/test_pic02" />
+        </com.windmillsteward.jukutech.customview.SquareLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

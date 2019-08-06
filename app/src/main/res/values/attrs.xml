@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StateButton">
+
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference"/>
+        <attr name="pressedTextColor" format="color|reference"/>
+        <attr name="unableTextColor" format="color|reference"/>
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference"/>
+        <attr name="strokeDashGap" format="dimension|reference"/>
+        <attr name="normalStrokeWidth" format="dimension|reference"/>
+        <attr name="pressedStrokeWidth" format="dimension|reference"/>
+        <attr name="unableStrokeWidth" format="dimension|reference"/>
+        <attr name="normalStrokeColor" format="color|reference"/>
+        <attr name="pressedStrokeColor" format="color|reference"/>
+        <attr name="unableStrokeColor" format="color|reference"/>
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference"/>
+        <attr name="pressedBackgroundColor" format="color|reference"/>
+        <attr name="unableBackgroundColor" format="color|reference"/>
+
+        <!--background radius-->
+        <attr name="radius" format="dimension|reference"/>
+        <attr name="round" format="boolean|reference"/>
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="circleProgressBar">
+        <attr name="circleWidth" format="dimension" />
+        <attr name="betaAngle" format="integer" />
+        <attr name="firstColor" format="color" />
+        <attr name="secondColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+
+    // 圆形头像
+    <declare-styleable name="CircleImageView">
+        <attr name="shape" format="integer">
+            <enum name="circle" value="1" />
+            <enum name="rectangle" value="2" />
+            <enum name="svg" value="3" />
+        </attr>
+        <attr name="svg_raw_resource" format="reference" />
+    </declare-styleable>
+
+    <!--流式布局加可选-->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"/>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--自动轮播-->
+    <declare-styleable name="FlyBanner">
+        <attr name="points_visibility" format="boolean"/>
+        <attr name="points_position" format="enum">
+            <enum name="CENTER" value="0"/>
+            <enum name="LEFT" value="1"/>
+            <enum name="RIGHT" value="2"/>
+        </attr>
+        <attr name="points_container_background" format="reference|color"/>
+    </declare-styleable>
+
+    <!--录制视频时的按钮-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="circleColor" format="color"/>
+        <attr name="roundColor" format="color"/>
+        <attr name="roundWidth" format="dimension"/>
+    </declare-styleable>
+
+    <!--折叠的textView-->
+    <declare-styleable name="ExpandTextView">
+        <attr name="contentText" format="reference|string" />
+        <attr name="foldHint" format="reference|string" />
+        <attr name="expandHint" format="reference|string" />
+        <attr name="textContentColor" format="reference|color" />
+        <attr name="textHintColor" format="reference|color" />
+        <attr name="indicateImage" format="reference" />
+        <attr name="minVisibleLines" format="integer" />
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="hintTextSize" format="dimension" />
+        <attr name="expandAnimationDuration" format="integer" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="BubbleView">
+        <attr name="arrowWidth" format="dimension" />
+        <attr name="angle" format="dimension" />
+        <attr name="arrowHeight" format="dimension" />
+        <attr name="arrowPosition" format="dimension" />
+        <attr name="bubbleColor" format="color" />
+        <attr name="arrowLocation" format="enum">
+            <enum name="left" value="0x00" />
+            <enum name="right" value="0x01" />
+            <enum name="top" value="0x02" />
+            <enum name="bottom" value="0x03" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CountdownView">
+        <attr name="isHideTimeBackground" format="boolean" />
+        <attr name="isShowTimeBgDivisionLine" format="boolean" />
+        <attr name="timeBgDivisionLineColor" format="color" />
+        <attr name="timeBgDivisionLineSize" format="dimension" />
+        <attr name="timeBgColor" format="color" />
+        <attr name="timeBgSize" format="dimension" />
+        <attr name="timeBgRadius" format="dimension" />
+        <attr name="isTimeTextBold" format="boolean" />
+        <attr name="timeTextSize" format="dimension" />
+        <attr name="timeTextColor" format="color" />
+        <attr name="isShowDay" format="boolean" />
+        <attr name="isShowHour" format="boolean" />
+        <attr name="isShowMinute" format="boolean" />
+        <attr name="isShowSecond" format="boolean" />
+        <attr name="isShowMillisecond" format="boolean" />
+        <attr name="isSuffixTextBold" format="boolean" />
+        <attr name="suffixTextSize" format="dimension" />
+        <attr name="suffixTextColor" format="color" />
+        <attr name="suffix" format="string" />
+        <attr name="suffixDay" format="string" />
+        <attr name="suffixHour" format="string" />
+        <attr name="suffixMinute" format="string" />
+        <attr name="suffixSecond" format="string" />
+        <attr name="suffixMillisecond" format="string" />
+        <attr name="suffixLRMargin" format="dimension" />
+        <attr name="suffixDayLeftMargin" format="dimension" />
+        <attr name="suffixDayRightMargin" format="dimension" />
+        <attr name="suffixHourLeftMargin" format="dimension" />
+        <attr name="suffixHourRightMargin" format="dimension" />
+        <attr name="suffixMinuteLeftMargin" format="dimension" />
+        <attr name="suffixMinuteRightMargin" format="dimension" />
+        <attr name="suffixSecondLeftMargin" format="dimension" />
+        <attr name="suffixSecondRightMargin" format="dimension" />
+        <attr name="suffixMillisecondLeftMargin" format="dimension" />
+    </declare-styleable>
+
+
+        <declare-styleable name="CountDownProgress">
+
+            <!-- 圆实心的颜色 -->
+            <attr name="circSolidColor" format="color"></attr>
+
+            <!-- 圆边框的颜色 -->
+            <attr name="circFrameColor" format="color"></attr>
+
+            <!-- 进度条的颜色 -->
+            <attr name="progressColor" format="color"></attr>
+
+            <!-- 文字的颜色 -->
+            <attr name="textColor" format="color"></attr>
+
+        </declare-styleable>
+
+
+    <declare-styleable name="ContactItemView">
+        <attr name="contactItemImage" format="reference"/>
+        <attr name="contactItemName" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="PwdEditText">
+        <attr name="style" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="roundRectangle" value="1" />
+        </attr>
+        <attr name="pwdCount" format="integer" />
+        <attr name="strokeRadius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        <attr name="dotColor" format="color" />
+        <attr name="dotRadius" format="dimension" />
+    </declare-styleable>
+
+    <!--最好是自定义View的类名，查看起来一目了然-->
+    <declare-styleable name="PwdEditText2">
+        <attr name="length" format="integer"/>
+        <attr name="password" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="Custom_Round_Image_View">
+        <attr name="radius_new" format="dimension"/>
+        <attr name="left_top_radius" format="dimension"/>
+        <attr name="right_top_radius" format="dimension"/>
+        <attr name="right_bottom_radius" format="dimension"/>
+        <attr name="left_bottom_radius" format="dimension"/>
+    </declare-styleable>
+
+</resources>

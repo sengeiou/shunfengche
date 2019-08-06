@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingTop="12dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单状态"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_zhuangtai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#fbb939"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_ll_order_sn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingTop="12dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单编号"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_bianhao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingTop="12dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_biaoti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingTop="12dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布地区"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_diqu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_qidian_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingTop="12dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_qidian_address_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_dizhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableRight="@mipmap/location"
+            android:drawablePadding="5dp"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_zd_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:visibility="gone"
+        android:paddingTop="12dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_zd_address_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终点地址"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_zd_dizhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableRight="@mipmap/location"
+            android:drawablePadding="5dp"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingTop="12dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="市场指导价"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_feiyong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="18dp"
+        android:paddingTop="12dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细需求"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_xiangqing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="12dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="12dp"
+        android:textColor="#9399a5"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <com.windmillsteward.jukutech.customview.FlyBanner
+        android:id="@+id/flyBanner"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_scrollFlags="scroll" />
+
+    <LinearLayout
+        android:id="@+id/lay_ll_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:background="@drawable/shape_wenxintishi"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="温馨提示"
+            android:textColor="#fbb939"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="1.管家默认在接单7天后打款给抢单方;\n2.如抢单方的工作已完成，请点击确认支付，管家将立即打款给抢单方;\n3.如抢单方工作有问题，请点击投诉，管家将为您冻结该笔资金，管家客服将介入处理。"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="12dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:text="当前定位"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_recent_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_white_4dp"
+                android:drawableLeft="@mipmap/icon_mark"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="8dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="8dp"
+                android:text="广州"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <TextView
+                android:id="@+id/tv_recent_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_bg_white_4dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="8dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="8dp"
+                android:text="天河区"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="12dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:text="热门城市"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_14sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp" />
+    </LinearLayout>
+</LinearLayout>

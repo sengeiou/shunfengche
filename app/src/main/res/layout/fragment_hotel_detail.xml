@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_detail"
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size_14sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/color_4b4340"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>

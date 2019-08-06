@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="职位"
+                android:layout_margin="10dp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_position_1"
+                    android:text="普工"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+
+                <TextView
+                    android:id="@+id/tv_position_2"
+                    android:text="销售"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+                <TextView
+                    android:id="@+id/tv_position_3"
+                    android:text="客服"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_position_4"
+                    android:text="采购"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+
+                <TextView
+                    android:id="@+id/tv_position_5"
+                    android:text="文员"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+                <TextView
+                    android:id="@+id/tv_position_6"
+                    android:text="服务员"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="简历"
+                android:layout_margin="10dp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_resume_1"
+                    android:text="中专/技校"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+
+                <TextView
+                    android:id="@+id/tv_resume_2"
+                    android:text="大专"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+                <TextView
+                    android:id="@+id/tv_resume_3"
+                    android:text="本科"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_resume_4"
+                    android:text="硕士"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+
+                <TextView
+                    android:id="@+id/tv_resume_5"
+                    android:text="博士"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+                <TextView
+                    android:text=""
+                    android:visibility="invisible"
+                    android:drawableTop="@drawable/icon_type_n"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="86dp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

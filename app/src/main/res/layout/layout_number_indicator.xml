@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_black_151515"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingRight="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=","
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_17sp" />
+
+</LinearLayout>

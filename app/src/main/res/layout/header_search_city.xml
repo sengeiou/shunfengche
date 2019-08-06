@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="18dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="23dp"
+            android:paddingTop="18dp">
+
+            <TextView
+                android:id="@+id/tv_looking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="您正在看：广州"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_select_qu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_select_quxian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择县区"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_closed_jiantou"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:src="@mipmap/icon_closed" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="12dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="13dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="13dp"
+        android:text="定位/最近访问"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/text_size_14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_recent"
+        android:layout_width="100dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/shape_bg_white_4dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_mark"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="广州"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="13dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="13dp"
+        android:text="热门城市"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/text_size_14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp" />
+</LinearLayout>

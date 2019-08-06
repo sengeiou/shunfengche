@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_white"
+        android:layout_height="45dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fl_hotel"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_hotel"
+                    android:text="酒店"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_text_999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:id="@+id/view_hotel"
+                    android:layout_width="40dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/color_them"
+                    android:layout_height="3dp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fl_house"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_house"
+                    android:text="家庭房源"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_text_999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:id="@+id/view_house"
+                    android:layout_width="40dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/color_them"
+                    android:layout_height="3dp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_line"/>
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

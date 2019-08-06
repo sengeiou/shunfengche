@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hight_padding_50"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="真实姓名"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请如实填写"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/color_text_b3"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_bg_f0f0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hight_padding_50"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="身份证号"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <EditText
+                    android:id="@+id/et_id_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:maxLength="18"
+                    android:hint="请如实填写"
+                    android:textColor="@color/text_color_black"
+                    android:textColorHint="@color/color_text_b3"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="证件照片"
+                android:textColor="@color/text_color_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_margin="18dp"
+                    android:id="@+id/iv_front_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_id" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="请上传身份证正面"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <ImageView
+                    android:layout_margin="18dp"
+                    android:id="@+id/iv_reverse_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_id_b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="请上传身份证反面"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="18dp"
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/shape_btn_logout"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_16sp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

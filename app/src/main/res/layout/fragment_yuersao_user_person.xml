@@ -1,0 +1,360 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:fillViewport="true"
+    tools:context="com.windmillsteward.jukutech.activity.newpage.yizhan.zhongjie_tgz.YonggongDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单编号"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_dingdan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="20184515645258979"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从业经验"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_jingyan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="1~3年"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="育儿嫂类型"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_leixing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="初级育儿嫂"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作时间"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_shijian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="住家育儿嫂"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="预定时间"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_ydshijian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:lineSpacingExtra="5dp"
+                android:text="2018/09/19-2018/10/19"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="薪资待遇"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_daiyu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:lineSpacingExtra="5dp"
+                android:text="200-300课时"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="工作地区"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_diqu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:lineSpacingExtra="5dp"
+                android:text="淄博张店区"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="详细地址"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon_marker"
+                android:gravity="right"
+                android:lineSpacingExtra="5dp"
+                android:text="科学大道中11号"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="服务内容"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_neirong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:lineSpacingExtra="5dp"
+                android:text="打扫卫生，买菜做饭"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="费用"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_feiyong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:lineSpacingExtra="5dp"
+                android:text="信息费¥20.00"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="17dp"
+            android:paddingLeft="12dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/default_avatar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="张爱国    男"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pipeidu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="匹配度：90%"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_mark"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom"
+                    android:text="淄博张店区"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

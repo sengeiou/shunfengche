@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f7f5f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/color_white"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/ease_commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/group_chat"
+            android:textColor="@color/color_394043"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/line_cdd4dc"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+         <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_height="match_parent" 
+            android:layout_width="match_parent">
+             
+		    <ListView
+		        android:id="@+id/list"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@color/white"
+		        android:cacheColorHint="#00000000"
+				android:divider="@null"
+				android:dividerHeight="0dp"
+		        android:descendantFocusability="afterDescendants"
+		        android:fastScrollAlwaysVisible="false"
+		        android:fastScrollEnabled="false" />
+		 </android.support.v4.widget.SwipeRefreshLayout>
+		 
+    </FrameLayout>
+
+</LinearLayout>

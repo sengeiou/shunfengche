@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:text="当地热门"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:stateListAnimator="@null"
+            app:elevation="0dp"
+            app:statusBarScrim="@null">
+
+            <LinearLayout
+                android:id="@+id/ll_indicator_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/enhance_tab_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_scrollFlags="scroll"
+                        app:tabMode="fixed"
+                        app:tabTextColor="@color/color_black"
+                        app:tabIndicatorColor="@color/color_23abac"
+                        app:tabIndicatorHeight="1dp">
+
+
+                    </android.support.design.widget.TabLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_bg" />
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appBarLayout"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

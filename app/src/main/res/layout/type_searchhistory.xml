@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tv_search_key"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:textSize="@dimen/text_size_15sp"
+    android:singleLine="true"
+    android:maxLines="1"
+    android:text=""
+    android:ellipsize="end"
+    android:textColor="@color/text_color_black"
+    android:background="@drawable/shape_text_white_bg"
+    android:layout_height="30dp"/>

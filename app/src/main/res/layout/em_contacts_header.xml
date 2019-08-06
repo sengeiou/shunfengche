@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.windmillsteward.jukutech.activity.chat.widget.ContactItemView
+        android:id="@+id/application_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@mipmap/icon_chat_apply_msg"
+        app:contactItemName="@string/Application_and_notify" />
+
+    <com.windmillsteward.jukutech.activity.chat.widget.ContactItemView
+        android:id="@+id/group_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@mipmap/icon_chat_group"
+        app:contactItemName="@string/group_chat" />
+
+    <com.windmillsteward.jukutech.activity.chat.widget.ContactItemView
+        android:id="@+id/chat_room_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:contactItemName="@string/chat_room" />
+
+    <com.windmillsteward.jukutech.activity.chat.widget.ContactItemView
+        android:id="@+id/robot_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:contactItemName="@string/robot_chat" />
+
+    <com.windmillsteward.jukutech.activity.chat.widget.ContactItemView
+        android:id="@+id/conference_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:contactItemName="@string/voice_and_video_conference" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black_4d"
+                android:textSize="@dimen/text_size_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/regist_front"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+</LinearLayout>

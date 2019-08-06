@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.windmillsteward.jukutech">
+
+    <!-- ************************************<<权限配置开始>>************************************************* -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <!-- *******************************百度地图************************************************ -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 地图部份***********************start**************************************** -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 地图部份***********************end**************************************** -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 支付宝支付***********************start**************************************** -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 支付宝支付***********************end**************************************** -->
+
+
+    <!-- 友盟推送***********************start**************************************** -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 友盟推送***********************end**************************************** -->
+
+
+    <!-- 友盟分享***********************start**************************************** -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 友盟分享***********************end**************************************** -->
+
+
+    <!-- 环信 start    Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 环信 end   Required -->
+
+
+    <!-- ************************************<<权限配置结束>>************************************************* -->
+    <application
+        android:name=".activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:resizeableActivity="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!-- 环信 start   Required -->
+        <!-- 设置环信应用的AppKey -->
+        <!-- 用户集成 SDK 后使用 HttpClient 报错 -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <!-- 适配Android 7.0, 需要将下方的com.hyphenate.chatuidemo替换为你的app包名 -->
+        <provider
+            android:name=".activity.chat.utils.CameraProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/hx_file_paths" />
+        </provider>
+
+
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1121190410168025#sfc-test" />
+        <!-- 声明SDK所需的service SDK核心功能-->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明环信SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <!-- 环信 end   Required -->
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+
+        <!--适配华为（huawei）刘海屏-->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <!--适配小米（xiaomi）刘海屏-->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:theme="@style/SplashAppTheme">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.home.personnel.activity.TalentInnListActivity" />
+        <activity android:name=".activity.home.personnel.activity.PositionDetailActivity" />
+        <activity android:name=".activity.home.personnel.activity.ResumeDetailActivity" />
+        <activity android:name=".activity.home.personnel.activity.SubmitLicenseActivity" />
+        <activity android:name=".activity.home.personnel.activity.CreateResumeActivity" />
+        <activity android:name=".activity.home.personnel.activity.EditWorkActivity" />
+        <activity android:name=".activity.home.personnel.activity.EditEduActivity" />
+        <activity android:name=".activity.home.personnel.activity.MyPublishListActivity" />
+        <activity android:name=".activity.home.personnel.activity.ApplyListActivity" />
+        <activity android:name=".activity.home.personnel.activity.CretePositionActivity" />
+        <activity android:name=".activity.home.personnel.activity.LabourServiceCenterActivity" />
+        <activity android:name=".activity.home.personnel.activity.LabourServiceCenterDetailActivity" />
+        <activity android:name=".activity.home.personnel.activity.ApplyLabourServiceActivity" />
+        <activity android:name=".activity.home.personnel.activity.LabourPositionClassActivity" />
+        <activity android:name=".activity.home.personnel.activity.LabourPositionTwoCLassActivity" />
+        <activity android:name=".activity.home.family.activity.IntelligentFamilyListActivity" />
+        <activity android:name=".activity.home.personnel.activity.PublishSuccessActivity" />
+        <activity
+            android:name=".activity.home.commons.search.SearchItemActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.home.commons.search.SearchResultActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.home.family.activity.IntelligentFamilyDetailActivity" />
+        <activity android:name=".manager.CommonActivityManager" />
+        <activity android:name=".activity.home.houselease.activity.HouseRentingActivity" />
+        <activity android:name=".activity.home.family.activity.PublishRequireActivity" />
+        <activity android:name=".activity.home.commons.video.VideoRecordingActivity" />
+        <activity android:name=".activity.home.family.activity.ChoiceCLassActivity" />
+        <activity android:name=".activity.home.family.activity.VideoPlayActivity" />
+        <activity android:name=".activity.home.family.activity.PhotoViewActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.StayAndTravelHomeActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.TravelDetailActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.TravelListActivity" />
+        <activity android:name=".activity.home.personnel.activity.PublishJobWantedActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.PublishTravelActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.SelectPhotoActivity" />
+        <activity android:name=".activity.home.commons.quickindex.QuickIndexCityActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.PublishEditTextActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.HotelAndHouseHomeActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.HotelAndHouseListActivity" />
+        <activity android:name=".activity.home.commons.dataselect.DateSelectActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.HotelAndHouseDetailActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.HotelAndHouseReserveActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.HotelAndHouseFacilitiesActivity" />
+        <activity android:name=".activity.home.commons.baidumap.BaiduMapActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.PublishHouseActivity" />
+        <activity android:name=".activity.home.houselease.activity.PublishActivity" />
+        <activity android:name=".activity.home.houselease.activity.PublishSellHouseActivity" />
+        <activity android:name=".activity.home.houselease.activity.PublishRentOutActivity" />
+        <activity android:name=".activity.home.houselease.activity.PublishBuyHouseActivity" />
+        <activity android:name=".activity.home.houselease.activity.PublishRentInActivity" />
+        <activity android:name=".activity.home.commons.quickindex.QuickIndexAreaActivity" />
+        <activity android:name=".activity.home.commons.quickindex.QuickIndexStreetActivity" />
+        <activity android:name=".activity.home.houselease.activity.HouseDescActivity" />
+        <activity android:name=".activity.home.houselease.activity.HouseDetailActivity" />
+        <activity android:name=".activity.home.think.activity.IdeaThinkListActivity" />
+        <activity android:name=".activity.home.think.activity.IdeaThinkDetailActivity" />
+        <activity android:name=".activity.home.think.activity.PublishIdeaThinkActivity" />
+        <activity android:name=".activity.home.think.activity.ChoiceIdeaThinkClassActivity" />
+        <activity android:name=".activity.home.personnel.activity.MyPositionDetailActivity" />
+        <activity android:name=".activity.home.fragment.activity.ScanActivity" />
+        <activity android:name=".activity.home.fragment.activity.SelectCityActivity" />
+        <activity android:name=".activity.home.fragment.activity.HomeSearchActivity" />
+        <activity android:name=".activity.home.fragment.activity.SearchModuleActivity" />
+        <activity android:name=".activity.home.fragment.activity.SearchSelectTypeActivity" />
+        <activity android:name=".activity.home.fragment.activity.HousekeeperAlertsListActivity" />
+        <activity android:name=".activity.home.fragment.activity.HouseKeeperAlertsDetailActivity" />
+        <activity android:name=".activity.home.fragment.activity.MessageListActivity" />
+        <activity android:name=".activity.home.fragment.activity.MessageListDetailActivity" />
+        <activity android:name=".activity.home.fragment.activity.HomeBannerH5Activity" />
+
+        <!-- 登录 -->
+        <activity
+            android:name=".activity.login.activity.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.login.activity.RegisterActivity" />
+        <activity android:name=".activity.login.activity.ForgetPasswordActivity" />
+        <!-- 欢迎页面 -->
+        <activity android:name=".activity.GuidanceActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask" />
+        <!-- 我的 -->
+        <activity android:name=".activity.mine.activity.MyInfoActivity" />
+        <activity android:name=".activity.home.personnel.activity.MyResumeDetailActivity" />
+        <activity android:name=".activity.home.personnel.activity.EditRequestJobActivity" />
+        <activity android:name=".activity.mine.activity.MyPublishActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.PublishHotelActivity" />
+        <activity android:name=".activity.mine.activity.MyCollectActivity" />
+        <activity android:name=".activity.mine.activity.MyResumeDetailActivity" />
+        <activity android:name=".activity.mine.activity.MyOrderActivity" />
+        <activity android:name=".activity.mine.activity.EditPositionDetailActivity" />
+        <activity android:name=".activity.mine.activity.EditResumeDetailActivity" />
+        <activity android:name=".activity.mine.activity.EditIdeaThinkDetailActivity" />
+        <activity android:name=".activity.mine.activity.EditIntelligentFamilyDetailActivity" />
+        <activity android:name=".activity.mine.activity.EditHouseDetailActivity" />
+        <activity android:name=".activity.mine.activity.MyCouponActivity" />
+        <activity android:name=".activity.mine.activity.MyWalletActivity" />
+        <activity android:name=".activity.mine.activity.WithdrawActivity" />
+        <activity android:name=".activity.mine.activity.AddWithdrawAccountActivity" />
+        <activity android:name=".activity.mine.activity.ManageWithDrawActivity" />
+        <activity android:name=".activity.mine.activity.WithDrawSuccessActivity" />
+        <activity android:name=".activity.mine.activity.FundsTrusteeshipHomeActivity" />
+        <activity android:name=".activity.mine.activity.AddFundsTrusteeshipActivity" />
+        <activity android:name=".activity.mine.activity.FundsTrusteeshipDetailActivity" />
+        <activity android:name=".activity.mine.activity.ReportTrusteeshipActivity" />
+        <activity android:name=".activity.mine.activity.ChangeNameActivity" />
+        <activity android:name=".activity.mine.activity.PersonalAuthenticationActivity" />
+        <activity android:name=".activity.mine.activity.ReceiverAddressActivity" />
+        <activity android:name=".activity.mine.activity.ServiceCenterActivity" />
+        <activity android:name=".activity.mine.activity.ModuleInstructionActivity" />
+        <activity android:name=".activity.mine.activity.FeedBackActivity" />
+        <activity android:name=".activity.mine.activity.AboutUsActivity" />
+        <activity android:name=".activity.mine.activity.AboutUsH5Activity" />
+        <activity android:name=".activity.mine.activity.SystemSettingActivity" />
+        <activity android:name=".activity.mine.activity.WalletListActivity" />
+        <activity android:name=".activity.mine.activity.WalletListDetailActivity" />
+
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx58fd613158c1dde6" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.mine.activity.OrderFamilyDetailActivity" />
+        <activity android:name=".activity.mine.activity.OrderHotelDetailActivity" />
+        <activity android:name=".activity.home.family.activity.GetOrderSuccessActivity" />
+        <activity android:name=".activity.home.stayandtravel.activity.StayAndTravelSearchActivity" />
+        <activity android:name=".activity.mine.activity.ReasonActivity" />
+        <activity android:name=".activity.home.commons.web.CommonWebActivity" />
+        <activity android:name=".activity.home.think.activity.ChoiceIdeaThinkClassTwoActivity" />
+        <activity android:name=".activity.mine.activity.BusinessAuthenticationActivity" />
+        <activity android:name=".activity.home.insurance.activity.InsuranceListActivity" />
+        <activity android:name=".activity.home.insurance.activity.PublishInsuranceActivity" />
+        <activity android:name=".activity.home.carservice.activity.CarServiceActivity" />
+        <activity android:name=".activity.home.carservice.activity.PoiIndexListActivity" />
+        <activity android:name=".activity.home.commons.pay.ChoiceCouponListActivity" />
+        <activity android:name=".activity.home.carservice.activity.CarListActivity" />
+        <activity android:name=".activity.home.carservice.activity.QuickIndexCarActivity" />
+        <activity android:name=".activity.home.carservice.activity.CarDetailActivity" />
+        <activity android:name=".activity.mine.activity.EditTravelDetailActivity" />
+        <activity android:name=".activity.home.carservice.activity.PublishSellCarActivity" />
+        <activity android:name=".activity.home.carservice.activity.CarTypeSelectActivity" />
+        <activity android:name=".activity.home.carservice.activity.BuyCarDetailActivity" />
+        <activity android:name=".activity.home.carservice.activity.PublishBuyCarActivity" />
+        <activity android:name=".activity.home.carservice.activity.BrandListActivity" />
+        <activity android:name=".activity.home.carservice.activity.VehicleListActivity" />
+        <activity android:name=".activity.home.carservice.activity.CarBrandListActivity" />
+        <activity android:name=".activity.home.carservice.activity.PublishCarOwnerActivity" />
+        <activity android:name=".activity.home.carservice.activity.CarOwnerDescActivity" />
+        <activity android:name=".activity.home.carservice.activity.PublishCarPassengerActivity" />
+        <activity android:name=".activity.home.carservice.activity.RentCarDetailActivity" />
+        <activity android:name=".activity.home.insurance.activity.InsuranceDetailActivity" />
+        <activity android:name=".activity.home.capitalmanager.activity.CapitalManagerActivity" />
+        <activity android:name=".activity.home.capitalmanager.activity.FinancingDetailActivity" />
+        <activity android:name=".activity.home.capitalmanager.activity.LoanDetailActivity" />
+        <activity android:name=".activity.home.capitalmanager.activity.PublishFinancingActivity" />
+        <activity android:name=".activity.home.capitalmanager.activity.PublishLoanActivity" />
+        <activity android:name=".activity.home.legalexpert.activity.LegalExpertActivity" />
+        <activity android:name=".activity.home.legalexpert.activity.PublishLegalExpertActivity" />
+        <activity android:name=".activity.home.legalexpert.activity.LegalExpertClassActivity" />
+        <activity android:name=".activity.home.specialty.activity.SpecialtyListActivity" />
+        <activity android:name=".activity.home.specialty.activity.SpecialtyClassActivity" />
+        <activity android:name=".activity.home.specialty.activity.SpecialtyDetailActivity" />
+        <activity android:name=".activity.home.specialty.activity.SpecialtyClassListActivity" />
+        <activity android:name=".activity.home.specialty.activity.GoodsListActivity" />
+        <activity android:name=".activity.home.specialty.activity.StoreGoodsListActivity" />
+        <activity android:name=".activity.home.specialty.activity.FillOrderActivity" />
+        <activity android:name=".activity.home.specialty.activity.SpecialtyHomeActivity" />
+        <activity android:name=".activity.shoppingcart.activity.AddOrderListActivity" />
+        <activity android:name=".activity.shoppingcart.activity.AddressListActivity" />
+        <activity android:name=".activity.shoppingcart.activity.AddAddressActivity" />
+        <activity android:name=".activity.shoppingcart.activity.ShoppingPayActivity" />
+        <activity android:name=".activity.shoppingcart.activity.ShoppingSuccessActivity" />
+        <activity android:name=".activity.mine.activity.SpecialtyOrderListActivity" />
+        <activity android:name=".activity.mine.activity.SpecialtyOrderDetailActivity" />
+        <activity android:name=".activity.mine.activity.ShoppingContinuePayActivity" />
+        <activity android:name=".activity.mine.activity.LogisticsActivity" />
+        <activity android:name=".activity.mine.activity.ApplySaleRefundActivity" />
+        <activity android:name=".activity.mine.activity.EditInsuranceDetailActivity" />
+        <activity android:name=".activity.mine.activity.AfterSalesListActivity" />
+        <activity android:name=".activity.mine.activity.AfterSalesDetailActivity" />
+        <activity android:name=".activity.mine.activity.RefundDeliveryActivity" />
+        <activity android:name=".activity.mine.activity.EditLegalExpertActivity" />
+        <activity android:name=".activity.mine.activity.EditFinancingDetailActivity" />
+        <activity android:name=".activity.mine.activity.EditLoanDetailActivity" />
+        <activity android:name=".activity.mine.activity.EditCarDetailActivity" />
+        <activity android:name=".activity.mine.activity.EditBuyCarDetailActivity" />
+        <activity android:name=".activity.mine.activity.EditRentCarDetailActivity" />
+        <activity android:name=".activity.home.specialty.activity.GoodsClassActivity" />
+        <activity android:name=".activity.home.specialty.activity.StoreInfoActivity" />
+        <activity android:name=".activity.mine.activity.ApplyRefundActivity" />
+        <activity android:name=".activity.home.specialty.activity.ShopCartActivity" />
+        <activity android:name=".activity.home.personnel.activity.PositionClassActivity" />
+        <activity android:name=".activity.home.personnel.activity.PositionTwoCLassActivity" />
+        <activity android:name=".activity.home.specialty.activity.SeckillListActivity" />
+        <activity android:name=".activity.home.specialty.activity.SeckillDetailActivity" />
+        <activity android:name=".activity.home.think.activity.WisdomFireControlListActivity" />
+        <activity android:name=".activity.home.think.activity.PublishWisdomFireControlListActivity" />
+        <activity android:name=".activity.home.think.activity.ChoiceWisdomFireControlActivity" />
+        <activity android:name=".activity.home.think.activity.WisdomFireControlDetailActivity" />
+        <activity android:name=".activity.home.insurance.activity.BigHealthDetailActivity" />
+        <activity android:name=".activity.shoppingcart.activity.ShoppingPayOtherActivity" />
+        <activity android:name=".activity.shoppingcart.activity.ShoppingOtherSuccessActivity" />
+        <!-- 支付完 -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="GFK2KL7SeGvKcYqQijCsVbTY1d8C3B0T" />
+        <!--/********************************友盟推送key&#45;&#45;start*********************/-->
+        <!--使用完全自定义消息来开启应用的服务进程的示例服务配置 -->
+        <!-- 不是必需的服务，可以根据开发者的需求进行设置 -->
+        <service android:name=".umeng.NotificationService" />
+        <service android:name=".umeng.MyPushIntentService" />
+        <service android:name=".umeng.UmengNotificationService" />
+        <service android:name=".umeng.MyNotificationService" />
+
+        <receiver android:name=".umeng.NotificationBroadcast" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5acdaf35b27b0a35820000d0" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="b5e8afac7ba478316bdad57d8a7c2d0c" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <!--/********************************友盟推送key&#45;&#45;end*********************/-->
+        <activity android:name=".activity.newpage.customerservice.activity.HomeCustomerActivity" />
+        <activity android:name=".activity.map.ShowMapActivity" />
+        <activity android:name=".activity.home.personnel.activity.TalentInnListNewActivity" />
+        <activity android:name=".activity.newpage.yizhan.CommonYizhanHomeActivity" />
+        <activity android:name=".activity.home.fragment.activity.SelectCityNewActivity" />
+        <activity android:name=".activity.home.family.activity.PublishRequireNewActivity" />
+        <activity android:name=".activity.newpage.yizhan.yinyuan.YinyuanAddUserInfoActivity" />
+        <activity android:name=".activity.newpage.yizhan.yinyuan.YiinyuanZeOuActivity" />
+        <activity android:name=".activity.newpage.yizhan.yinyuan.YinyuanUseInfoActivity" />
+        <activity android:name=".activity.newpage.pay.NewPayActivity" />
+        <activity android:name=".activity.customer.activity.CustomerDetailActivity" />
+        <activity android:name=".activity.newpage.pay.PaySuccessActivity" />
+        <activity android:name=".activity.newpage.smartlife.SmartLifeDetailsActivity" />
+        <activity android:name=".activity.map.SelectCityFromMapActivity" />
+        <activity android:name=".activity.map.SearchBaiduCityActivity" />
+        <activity android:name=".activity.newpage.customerservice.activity.HomeCustomerSearchActivity" />
+        <activity android:name=".activity.mine.activity.RechargeActivity" />
+        <activity android:name=".activity.login.activity.UserAgreementH5Activity" />
+        <activity android:name=".activity.mine.activity.AddBankAccountActivity" />
+        <activity android:name=".activity.map.ShowMapYingPinActivity" />
+        <activity android:name=".activity.map.ShowMapZhaoPinActivity" />
+        <activity android:name=".activity.mine.activity.TuiGuangWalletListActivity" />
+        <activity android:name=".activity.newpage.newpublish.HomeCommonPublishActivity" />
+        <activity android:name=".activity.newpage.yizhan.common.SelectAreaActivity" />
+        <activity android:name=".activity.newpage.yizhan.common.SelectCityForPublishActivity" />
+        <activity
+            android:name=".activity.WelcomeTwoActivity"
+            android:theme="@style/SplashAppTwoTheme" />
+        <activity android:name=".activity.chat.activity.ChatActivity" />
+        <activity android:name=".activity.chat.activity.ContextMenuActivity" />
+        <activity android:name=".activity.chat.activity.ForwardMessageActivity" />
+        <activity android:name=".activity.chat.activity.GroupDetailsActivity" />
+        <activity android:name=".activity.chat.activity.PickAtUserActivity" />
+        <activity android:name=".activity.chat.activity.PickContactNoCheckboxActivity" />
+        <activity android:name=".activity.chat.activity.AddContactActivity" />
+        <activity android:name=".activity.chat.activity.GroupPickContactsActivity" />
+        <activity android:name=".activity.chat.activity.GroupsActivity" />
+        <activity android:name=".activity.chat.activity.NewFriendsMsgActivity" />
+        <activity android:name=".activity.chat.activity.NewGroupActivity" />
+        <activity
+            android:name=".activity.chat.activity.ExitGroupDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity android:name=".activity.chat.activity.ChatEditActivity" />
+        <activity android:name=".activity.chat.activity.Face2FaceCreateGroupActivity" />
+        <activity android:name=".activity.chat.activity.GroupSearchMessageActivity" />
+        <activity android:name=".activity.newpage.me.DuiJiangActivity" />
+        <activity android:name=".activity.newpage.me.DuiJiangWebActivity" />
+        <activity android:name=".activity.newpage.pay.RedPacketPayActivity" />
+        <activity android:name=".activity.chat.activity.SendRedPacketActivity" />
+        <activity android:name=".activity.chat.activity.RedPacketDetailActivity" />
+        <activity android:name=".activity.chat.ui.EaseDingAckUserListActivity" />
+        <activity android:name=".activity.chat.ui.EaseDingMsgSendActivity" />
+        <activity android:name=".activity.chat.ui.EaseShowBigImageActivity" />
+        <activity android:name=".activity.chat.ui.EaseShowNormalFileActivity" />
+        <activity android:name=".activity.chat.ui.EaseShowVideoActivity" />
+        <activity android:name=".activity.chat.activity.EaseBaiduMapActivity" />
+        <activity android:name=".activity.chat.activity.UserProfileActivity" />
+        <activity android:name=".activity.chat.activity.GroupSimpleDetailActivity" />
+        <activity android:name=".activity.chat.activity.PublicGroupsSeachActivity" />
+        <activity android:name=".activity.home.personnel.activity.PositionThreeCLassActivity" />
+        <activity android:name=".activity.newpage.newpublish.WorkAndRencaiInfoActivity" />
+        <activity android:name=".activity.newpage.smartlife.DingcanWebActivity" />
+        <activity android:name=".activity.newpage.smartlife.DingCanServiceHomeActivity" />
+        <activity android:name=".activity.newpage.smartlife.DingcanSearchActivity" />
+        <activity android:name=".activity.newpage.smartlife.DingcanOrderDetailActivity" />
+    </application>
+
+</manifest>

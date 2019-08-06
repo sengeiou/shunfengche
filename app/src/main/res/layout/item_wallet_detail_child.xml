@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lay_ll_root"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="@color/color_bg_f0f0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="提现（提现完成）"
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_17sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="#9399a5"
+            android:textSize="@dimen/text_size_11sp" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:text=""
+            android:textColor="@color/text_blue" />
+     </RelativeLayout>
+</LinearLayout>

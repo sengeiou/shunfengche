@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.windmillsteward.jukutech.customview.CommonRefreshLayout
+        android:id="@+id/common_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.windmillsteward.jukutech.customview.CommonRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_all_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_color"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="全部支付"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_16sp" />
+</LinearLayout>

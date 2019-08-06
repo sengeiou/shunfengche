@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="77dp">
+
+                <ImageView
+                    android:src="@mipmap/icon_sucess"
+                    android:layout_width="30dp"
+                    android:layout_margin="15dp"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="基础简历创建成功"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:textColor="@color/text_color_black"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="完善一下信息，提升求职率"
+                        android:textColor="@color/color_ccc"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_them_alpha"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="工作经历"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <com.windmillsteward.jukutech.customview.TimelineLayout
+                android:id="@+id/timeline_work"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            </com.windmillsteward.jukutech.customview.TimelineLayout>
+
+            <TextView
+                android:id="@+id/tv_add_work"
+                android:text="添加工作经历"
+                android:textColor="@color/color_them"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_text_add_bg"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_them_alpha"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="教育经历"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <com.windmillsteward.jukutech.customview.TimelineLayout
+                android:id="@+id/timeline_edu"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.windmillsteward.jukutech.customview.TimelineLayout>
+
+            <TextView
+                android:id="@+id/tv_add_edu"
+                android:text="添加教育经历"
+                android:background="@drawable/shape_text_add_bg"
+                android:padding="5dp"
+                android:textColor="@color/color_them"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size_14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_them_alpha"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="自我介绍"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_intro_me"
+                android:layout_width="match_parent"
+                android:lines="10"
+                android:gravity="top"
+                android:hint="请输入自我介绍，限20-200字"
+                android:background="@drawable/shape_input_stroke"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:maxLength="200"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColorHint="@color/color_text_b3"
+                android:textColor="@color/text_color_black"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/color_them_alpha"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_them_alpha"
+                android:gravity="center"
+                android:layout_height="88dp">
+
+                <TextView
+                    android:id="@+id/tv_add_resume"
+                    android:text="发布"
+                    style="@style/margin_l_r_10dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_white"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="220dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_btn_them_deep_bg"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

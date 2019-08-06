@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="45dp">
+
+    <TextView
+        android:text="加载失败，点击重试"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/text_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

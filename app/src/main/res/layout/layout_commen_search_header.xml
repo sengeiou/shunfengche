@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@mipmap/icon_new_arrow_down_solid_white"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:maxEms="4"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="地区"
+            android:textColor="@color/color_white"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/lay_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_home_search_bg_white_two"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lay_ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/icon_sousuo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="请输入关键词"
+                    android:textColor="#9399a5"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:drawableTop="@mipmap/icon_new_scan_code"
+            android:drawablePadding="5dp"
+            android:text="扫一扫"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_9sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@mipmap/icon_new_msg"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="消息"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_size_9sp" />
+
+            <TextView
+                android:id="@+id/tv_message_count"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignRight="@id/tv_message"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_round_solid_red"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

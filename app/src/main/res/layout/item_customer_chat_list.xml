@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg_f0f0"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/icon_default_head"/>
+
+        <TextView
+            android:id="@+id/tv_customer_content"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_customer"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:background="@drawable/icon_address"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_default_head"/>
+
+        <TextView
+            android:id="@+id/tv_user_content"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_user"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:background="@drawable/icon_address"/>
+    </RelativeLayout>
+</LinearLayout>

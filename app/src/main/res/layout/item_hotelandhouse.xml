@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/iv_img"
+            android:src="@mipmap/header"
+            android:layout_width="87dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="5dp"
+            android:layout_height="58dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="标题"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/text_color_black"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:text="经济型"
+                android:textSize="@dimen/text_size_12sp"
+                android:textColor="@color/color_text_78"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/icon_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:text="广州 天河 金河谷"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:text="100"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="起"
+                    android:textColor="@color/color_text_78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/color_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>

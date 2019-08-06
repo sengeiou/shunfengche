@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:src="@mipmap/icon_deleteimg"
+        android:layout_width="27dp"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:layout_height="27dp" />
+
+</FrameLayout>

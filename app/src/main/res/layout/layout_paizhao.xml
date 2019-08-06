@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge   xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_pic_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="17dp"
+        android:text="照片"
+        android:textColor="@color/color_text_666"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+</merge>

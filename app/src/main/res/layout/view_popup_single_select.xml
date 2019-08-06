@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="14dp"
+            android:text="取消"
+            android:textColor="@color/common_color"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14dp"
+            android:paddingLeft="15dp"
+            android:layout_centerInParent="true"
+            android:paddingRight="15dp"
+            android:paddingTop="14dp"
+            android:text="标题"
+            android:textColor="@color/common_color"
+            android:textSize="@dimen/text_size_14sp" />
+
+
+    </RelativeLayout>
+
+    <com.windmillsteward.jukutech.customview.LimitHeightListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/color_white"
+        android:divider="@null" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail"/>
+    <com.windmillsteward.jukutech.customview.CommonRefreshLayout
+        android:id="@+id/common_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:background="@color/color_bg_f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.windmillsteward.jukutech.customview.CommonRefreshLayout>
+
+    <include layout="@layout/view_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="48dp">
+
+        <LinearLayout
+            android:id="@+id/linear_select"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_select"
+                android:src="@mipmap/icon_select_n"
+                android:scaleType="centerCrop"
+                android:layout_width="17dp"
+                android:layout_height="17dp" />
+            <TextView
+                android:text="全选"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_15sp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="合计:"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:text=""
+            android:textColor="@color/color_price"
+            android:textSize="@dimen/text_size_12sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_result"
+            android:text="结算(0)"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="87dp"
+            android:gravity="center"
+            android:background="@color/color_f6c650"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

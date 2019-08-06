@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_select_linear" />
+
+
+
+    <com.windmillsteward.jukutech.customview.CommonRefreshLayout
+        android:id="@+id/common_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:background="@color/color_bg_f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.windmillsteward.jukutech.customview.CommonRefreshLayout>
+
+</LinearLayout>

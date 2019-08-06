@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_bg_f0f0"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:layout_height="40dp">
+
+        <View
+            android:layout_width="2dp"
+            android:background="@color/color_them"
+            android:layout_marginLeft="12dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:text="设施设备"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/text_color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_fafafa"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="公共设施"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_939395"
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <com.windmillsteward.jukutech.customview.FlowLayout
+                android:id="@+id/fl_common"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="客房设施"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_939395"
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <com.windmillsteward.jukutech.customview.FlowLayout
+                android:id="@+id/fl_custom"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="酒店服务"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_939395"
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <com.windmillsteward.jukutech.customview.FlowLayout
+                android:id="@+id/fl_hotel"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="14dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="活动设施"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_939395"
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <com.windmillsteward.jukutech.customview.FlowLayout
+                android:id="@+id/fl_activity"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_bg_f0f0"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/color_white"
+        android:layout_height="40dp">
+
+        <View
+            android:layout_width="2dp"
+            android:background="@color/color_them"
+            android:layout_marginLeft="12dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:text="酒店政策"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/text_color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_fafafa"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="离店时间："
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_939395"
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_left_time"
+                android:text="14:00以后"
+                android:textSize="@dimen/text_size_13sp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_marginRight="25dp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="膳食安排："
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_939395"
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_have_each"
+                android:text="无"
+                android:textSize="@dimen/text_size_13sp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_marginRight="25dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="14dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="宠物："
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/color_939395"
+                android:layout_marginLeft="12dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_pet"
+                android:text="无"
+                android:textSize="@dimen/text_size_13sp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_marginRight="25dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_detail"/>
+    <com.windmillsteward.jukutech.customview.FlyBanner
+        android:id="@+id/flyBanner"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"/>
+
+    <TextView
+        android:text="请填写需求，平台会有专人会根据您的需求推荐合适的律师"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_14sp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_fill_request"
+        android:text="填写需求"
+        android:layout_marginTop="23dp"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_btn_them_deep_bg"
+        android:textColor="@color/color_white"
+        android:layout_width="218dp"
+        android:layout_height="42dp" />
+
+</LinearLayout>

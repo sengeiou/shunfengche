@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_white_5"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/view_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="39dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_gz_dq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="工作地区:"
+                android:textColor="#394043"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018/09/13"
+                android:textColor="#9399a5"
+                android:textSize="@dimen/text_size_12sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_gz_rq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="工作日期:"
+                android:textColor="#394043"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_gz_sj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="工作时间:"
+                android:textColor="#394043"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_gz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="工         种："
+                android:textColor="#394043"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@mipmap/order_zhihui"
+        android:gravity="center"
+        android:text="智慧生活-订餐服务"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_11sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="25dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:layout_marginRight="2dp"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:id="@+id/tv_hongdian"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_round_solid_red"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>

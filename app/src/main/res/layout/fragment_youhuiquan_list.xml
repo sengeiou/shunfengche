@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.windmillsteward.jukutech.customview.CommonRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.newpage.pay.YouhuiquanListFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/shape_bg_white_4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:text="不使用优惠券"
+                android:textColor="@color/color_666666" />
+
+            <ImageView
+                android:id="@+id/iv_no_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/select" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</com.windmillsteward.jukutech.customview.CommonRefreshLayout>

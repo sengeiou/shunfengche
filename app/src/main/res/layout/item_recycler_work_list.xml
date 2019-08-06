@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:background="@color/color_white"
+    android:paddingLeft="20dp">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/line_cdd4dc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:lineSpacingExtra="4dp"
+            android:text=""
+            android:textColor="#394043"
+            android:textSize="@dimen/text_size_17sp" />
+
+        <TextView
+            android:id="@+id/tv_diqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text=""
+            android:textColor="#5f87ab"
+            android:textSize="@dimen/text_size_13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_xinzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_ff8819"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  |  "
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:id="@+id/tv_work_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_arrow_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:paddingTop="3dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="查看"
+            android:background="@drawable/shape_text_white_bg_r4_stro_3172f4"
+            android:textColor="@color/common_color"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

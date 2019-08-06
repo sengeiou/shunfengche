@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/toolbar_detail"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/list"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <com.windmillsteward.jukutech.customview.QuickIndexBar
+            android:id="@+id/bar"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_index_layout"
+            android:text="A"
+            android:visibility="invisible"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_bg_index"
+            android:layout_width="160dip"
+            android:layout_height="80dip"/>
+
+    </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_reason"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="12dp"
+                android:textColorHint="@color/color_text_b3"
+                android:hint="请描述原因"
+                android:gravity="top"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_15sp"
+                android:background="@drawable/shape_retangle_circle_r3_bg_white"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传凭证"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <com.windmillsteward.jukutech.customview.MyGridView
+                    android:id="@+id/gv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="12dp"
+                    android:layout_marginTop="15dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="12dp" />
+            </LinearLayout>
+
+            <com.windmillsteward.jukutech.utils.StateButton
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_hight_42"
+                android:layout_marginLeft="72dp"
+                android:layout_marginRight="72dp"
+                android:layout_marginTop="30dp"
+                android:text="提交"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/color_them_deep"
+                app:pressedBackgroundColor="@color/color_them_deep"
+                app:radius="4dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

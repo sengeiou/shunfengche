@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_hongbao_touming_bg"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_hongbao_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/hongbao" />
+
+        <ImageView
+            android:id="@+id/iv_hongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_alignBottom="@id/iv_hongbao_bg"
+            android:src="@mipmap/icon_hongbao_open" />
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:src="@mipmap/icon_hongbao_close"/>
+    </RelativeLayout>
+</LinearLayout>

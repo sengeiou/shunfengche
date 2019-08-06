@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/icon_wechat_share"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="微信" />
+    <TextView
+        android:id="@+id/tv_weixin_quan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/icon_wechat_share"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="微信朋友圈" />
+    <TextView
+        android:id="@+id/tv_erweima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/icon_tuiguang_erweima"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="二维码" />
+
+    <TextView
+        android:id="@+id/tv_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/icon_tuiguang_lianjie"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="复制链接" />
+
+</LinearLayout>

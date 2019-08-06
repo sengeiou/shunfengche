@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp">
+        <com.windmillsteward.jukutech.customview.FlyBanner
+            android:id="@+id/flyBanner"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            app:points_position="RIGHT"/>
+
+        <LinearLayout
+            android:id="@+id/linear_bottom"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_hotel_name"
+                android:text=""
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_15sp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_house_type"
+                android:text=""
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/color_white"
+                android:layout_marginTop="3dp"
+                android:textSize="@dimen/text_size_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_address"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/color_white"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@mipmap/icon_mark"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:text="广州 天河 金河谷"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/color_text_78"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/icon_jump"
+            android:layout_width="8dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_bg_f0f0"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:id="@+id/linear_join_hotel_time"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/color_white"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@mipmap/icon_date"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:text="1月10日-2月10日"
+            android:textSize="@dimen/text_size_17sp"
+            android:textColor="@color/text_color_black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_days"
+            android:text="共1晚"
+            android:textColor="@color/color_text_b3"
+            android:textSize="@dimen/text_size_17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/icon_jump"
+            android:layout_width="8dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:background="@color/color_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>

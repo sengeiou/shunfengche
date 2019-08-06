@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_window_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@android:id/progress"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/layer_recording_animation" />
+
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="手指上滑，取消录音"
+            android:background="@null"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lay_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdd4dc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_padding_50"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/rb_home"
+                    style="@style/home_bottom"
+                    android:drawableTop="@drawable/selector_main_tab_home"
+                    android:text="首页" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/rb_order"
+                    style="@style/home_bottom"
+                    android:background="@color/color_white"
+                    android:drawableTop="@drawable/selector_main_tab_classify"
+                    android:stateListAnimator="@null"
+                    android:text="订单" />
+
+                <TextView
+                    android:id="@+id/unread_msg_number"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/icon_hot_dot"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/rb_custormer"
+                    style="@style/home_bottom"
+                    android:drawableTop="@drawable/selector_main_tab_shopping_cart"
+                    android:text="客服" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/rb_conversation"
+                    style="@style/home_bottom"
+                    android:drawableTop="@drawable/selector_main_tab_shopping_cart"
+                    android:text="会话" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/rb_contactperson"
+                    style="@style/home_bottom"
+                    android:drawableTop="@drawable/selector_main_tab_custmer_service"
+                    android:text="通讯录"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/rb_mine"
+                    style="@style/home_bottom"
+                    android:drawableTop="@drawable/selector_main_tab_mine"
+                    android:text="我的" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lay_ll_bottom"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/lay_rl_hongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_hongbao_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_small_hb_msq" />
+
+
+            <TextView
+                android:id="@+id/btn_hb_djs"
+                android:layout_width="43dp"
+                android:layout_height="12dp"
+                android:layout_alignBottom="@id/iv_hongbao_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape_bg_yellow_f8d000_r16"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="0dp"
+                android:text="马上抢红包"
+                android:textColor="#f84831"
+                android:textSize="5sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_hongbao_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/lay_rl_hongbao"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@mipmap/icon_quxiao"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

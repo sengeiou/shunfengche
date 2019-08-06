@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+
+    <LinearLayout
+        android:id="@+id/linear_sell"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/color_white"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_publish_out"
+            android:text="我要卖房"
+            android:layout_width="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_17sp"
+            android:textColor="@color/text_color_black"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/icon_jump"
+            android:layout_width="8dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line_marginleft_15"/>
+    <LinearLayout
+        android:id="@+id/linear_buy"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/color_white"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_publish_in"
+            android:text="我要买房"
+            android:layout_width="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_17sp"
+            android:textColor="@color/text_color_black"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/icon_jump"
+            android:layout_width="8dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

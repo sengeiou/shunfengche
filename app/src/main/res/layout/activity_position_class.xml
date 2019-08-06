@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_them"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/toolbar_height">
+
+        <ImageView
+            android:id="@+id/toolbar_iv_back"
+            android:src="@mipmap/icon_back"
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:hint="请输入职位名称"
+            android:textSize="@dimen/text_size_14sp"
+            android:background="@drawable/shape_toolbar_input_bg"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_color_black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

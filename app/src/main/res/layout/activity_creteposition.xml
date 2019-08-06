@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_them_alpha"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="基本信息"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="职位名称"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_position_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:hint="请输入职位名称"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:maxLength="6"
+                    android:textColorHint="@color/color_text_b3"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_10"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="职业分类"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_position_class"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:hint="请选择分类"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="薪资水平"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_salary"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:hint="请选择"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="工作区域"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:hint="请选择区域"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="详细地址"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_area_detail"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:hint="请输入详细地址"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:textColorHint="@color/color_text_b3"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:visibility="invisible"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="*"
+                    android:textColor="@color/color_red" />
+
+                <TextView
+                    style="@style/margin_l_r_10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="工作年限"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_work"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/color_white"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:hint="选择工作经验"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/icon_jump" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="学历"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_edu"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:hint="选择学历"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="福利"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_welfare"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:hint="请选择福利"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="要求"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_require"
+                android:layout_width="match_parent"
+                android:lines="4"
+                android:maxLength="20"
+                style="@style/margin_l_r_10dp"
+                android:gravity="top"
+                android:padding="8dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColorHint="@color/color_text_b3"
+                android:textColor="@color/text_color_black"
+                android:background="@drawable/shape_input_stroke"
+                android:layout_marginBottom="10dp"
+                android:hint="请输入要求，用空格分隔要求，如：经验不限 招10人"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_them_alpha"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="其他内容"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="标题"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:hint="如高薪招聘经理"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:maxLength="30"
+                    android:textColorHint="@color/color_text_b3"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="职位描述"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_position_desc"
+                android:layout_width="match_parent"
+                android:lines="10"
+                style="@style/margin_l_r_10dp"
+                android:gravity="top"
+                android:padding="8dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:textColorHint="@color/color_text_b3"
+                android:textColor="@color/text_color_black"
+                android:background="@drawable/shape_input_stroke"
+                android:hint="请输职位描述；2000字以内"
+                android:maxLength="2000"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_them_alpha"
+                android:layout_height="40dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="联系人"
+                    style="@style/margin_l_r_10dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_contacts"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:hint="请输入联系人"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:maxLength="7"
+                    android:textColorHint="@color/color_text_b3"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="联系电话"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:hint="请输入联系电话"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:maxLength="11"
+                    android:inputType="phone"
+                    android:textColorHint="@color/color_text_b3"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="发布地区"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_post_area"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:hint="请选择地区"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/color_them_alpha"
+                android:gravity="center_horizontal"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:id="@+id/tv_release"
+                    android:text="发布"
+                    style="@style/margin_l_r_10dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_white"
+                    android:layout_width="220dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_btn_them_deep_bg"
+                    android:layout_height="42dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

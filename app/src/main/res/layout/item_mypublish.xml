@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_marginLeft="15dp"
+            android:layout_width="92dp"
+            android:layout_height="69dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="69dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:text=""
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/text_color_black"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/color_23abac"/>
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:layout_width="wrap_content"
+                    android:text="详细原因"
+                    android:visibility="gone"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textSize="@dimen/text_size_10sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="@color/color_text_78"
+                    android:background="@drawable/shape_mypublish_notpass_bg"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_divider"
+        android:layout_height="0.5dp"/>
+
+
+    
+</LinearLayout>

@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+    tools:context="com.windmillsteward.jukutech.activity.newpage.yizhan.zhongjie_tgz.YonggongDetailFragment">
+
+
+
+        <LinearLayout
+            android:id="@+id/lay_ll_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="温馨提示"
+                android:textColor="#fbb939"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="16dp"
+                android:text="1.如果您不满意请点击不感兴趣，管家会为您重新匹配。\n2.如果您满意请点击获取联系方式，即可获得详细联系方式。"
+                android:textColor="#666666"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

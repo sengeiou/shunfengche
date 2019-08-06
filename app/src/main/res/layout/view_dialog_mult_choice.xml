@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_dialog_bg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_them_alpha"
+    android:layout_height="match_parent">
+
+    <com.windmillsteward.jukutech.customview.flowlayout.TagFlowLayout
+        android:id="@+id/tagFlowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:max_select="-1"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:text="确定"
+            android:textColor="@color/color_white"
+            android:background="@drawable/shape_btn_them_deep_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_14sp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:text="取消"
+            android:textColor="@color/text_color_black"
+            android:background="@drawable/shape_btn_gray_bg"
+            android:textSize="@dimen/text_size_14sp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

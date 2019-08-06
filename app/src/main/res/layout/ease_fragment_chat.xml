@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyphenate="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/bg_f7f5f6">
+
+    <com.windmillsteward.jukutech.activity.chat.widget.EaseTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hyphenate:titleBarLeftImage="@mipmap/icon_new_arrow_back" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/title_bar"
+        android:background="@color/line_cdd4dc" />
+
+    <LinearLayout
+        android:id="@+id/layout_alert_kicked_off"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title_bar"
+        android:background="@drawable/ease_alert_click_bg"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/alert_kicked_for_offline"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input_menu"
+        android:layout_below="@id/layout_alert_kicked_off">
+
+        <com.windmillsteward.jukutech.activity.chat.widget.EaseChatMessageList
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.windmillsteward.jukutech.activity.chat.widget.EaseVoiceRecorderView
+            android:id="@+id/voice_recorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <com.windmillsteward.jukutech.activity.chat.widget.EaseChatInputMenu
+        android:id="@+id/input_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

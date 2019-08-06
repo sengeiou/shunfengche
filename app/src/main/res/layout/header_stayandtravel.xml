@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.windmillsteward.jukutech.customview.FlyBanner
+        android:id="@+id/flyBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shape_stayandtravel_houe_bg"
+        android:layout_height="85dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_around"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/icon_around"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="周边游"
+                    android:textColor="@color/color_text_78"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_group"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/icon_heeltour"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="跟团游"
+                    android:textColor="@color/color_text_78"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_free"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/icon_free"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="自由行"
+                    android:textColor="@color/color_text_78"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_one_day"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/icon_yiry"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="一日游"
+                    android:textColor="@color/color_text_78"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_hotel"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/icon_hotel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="酒店"
+                    android:textColor="@color/color_text_78"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_bg_f0f0"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:src="@mipmap/icon_travel_recommend"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+</LinearLayout>

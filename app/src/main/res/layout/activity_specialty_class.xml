@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_detail"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tableRecyclerView"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="@dimen/text_size_15sp"
+                android:text="二级分类"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@drawable/select_classification_menu_text"
+                android:background="@color/color_white"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <View
+                android:background="@color/color_dedede"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

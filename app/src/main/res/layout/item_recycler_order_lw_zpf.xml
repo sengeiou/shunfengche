@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_white_5"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="39dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="招聘水泥工3名，装修工5名"
+                android:textColor="#394043"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <TextView
+                android:id="@+id/tv_right_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_bg_blue_60bdd1"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp"
+                android:text="确认支付"
+                android:textColor="@color/common_color"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="18dp">
+
+            <TextView
+                android:id="@+id/tv_right_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/location"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingRight="7dp"
+                android:paddingBottom="4dp"
+                android:text="淄博市张店区"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018/09/13"
+                android:textColor="#9399a5"
+                android:textSize="@dimen/text_size_12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/order_lwzj"
+        android:gravity="center"
+        android:text="劳务工订单"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="还差X人"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:id="@+id/tv_hongdian"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_round_solid_red"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="104dp">
+
+                <com.windmillsteward.jukutech.customview.CircleImageView
+                    android:id="@+id/iv_video"
+                    android:src="@mipmap/icon_add_video"
+                    android:layout_width="67dp"
+                    android:layout_height="67dp" />
+
+                <TextView
+                    android:text="添加视频会有更多人看到"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/color_them_alpha"
+                android:layout_height="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="标题"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:hint="请输入标题"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:textColorHint="@color/color_text_b3"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="需求详情"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_require_desc"
+                android:layout_width="match_parent"
+                android:textColor="@color/text_color_black"
+                android:textColorHint="@color/color_text_78"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="12dp"
+                android:lines="10"
+                android:hint="描述需求详情，2000字以内"
+                android:maxLength="2000"
+                android:gravity="top"
+                android:padding="10dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:background="@drawable/shape_input_stroke"
+                android:layout_height="wrap_content" />
+
+            <com.windmillsteward.jukutech.customview.MyGridView
+                android:id="@+id/mgv_select_photo"
+                android:layout_width="match_parent"
+                android:numColumns="4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"/>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="价格"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_price"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:hint="请输入价格"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:maxLength="12"
+                    android:textColorHint="@color/color_text_b3"
+                    android:textColor="@color/text_color_black"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="分类"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:hint="请选择分类"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/color_them_alpha"
+                android:layout_height="12dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="*"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="发布地区"
+                    style="@style/margin_l_r_10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:hint="选择地区"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_width="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:background="@color/color_them_alpha"
+                android:layout_height="115dp">
+                <TextView
+                    android:id="@+id/tv_release"
+                    android:layout_width="218dp"
+                    android:text="立即发布"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_them_deep"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/color_white"
+                    android:layout_height="42dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

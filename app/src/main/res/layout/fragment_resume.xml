@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_header"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_apply"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/color_white"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/icon_resume"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp" />
+                <TextView
+                    android:text="应聘简历"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/learn_my_publish"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/icon_published"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp" />
+                <TextView
+                    android:text="我的发布"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/color_bg_f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_select_linear_four"/>
+
+    <View
+        android:background="@color/color_bg_f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <com.windmillsteward.jukutech.customview.CommonRefreshLayout
+        android:id="@+id/common_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:background="@color/color_bg_f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.windmillsteward.jukutech.customview.CommonRefreshLayout>
+
+</LinearLayout>

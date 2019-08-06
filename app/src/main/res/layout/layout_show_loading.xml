@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/layout_rl_dialog_bg"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_retangle_circle_r8_bg_white"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/setting_Loading_ImageView"
+                style="@style/mProgress_circle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/anim_loading"/>
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="请稍候..."
+                android:textColor="#cbc7c7"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

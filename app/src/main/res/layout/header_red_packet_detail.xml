@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_f7f5f6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lay_rl_root"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_hb_detail_top">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_white_arrow_back"
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp"
+            android:text=""
+            android:textColor="@color/color_bg"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lay_ll_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.windmillsteward.jukutech.customview.CircleImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_head"
+                    android:text=""
+                    android:textColor="@color/color_bg"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lay_ll_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_lqu_qingkuang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="15dp"
+        android:text=""
+        android:textColor="@color/text_9399a5"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>

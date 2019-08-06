@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ecf6f8"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_padding_50"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="*"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="托管模块"
+                        android:textColor="@color/text_color_black" />
+
+                    <TextView
+                        android:id="@+id/tv_trusteeship_module_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/text_color_black"
+                        android:drawableRight="@mipmap/icon_open"
+                        android:gravity="right"
+                        android:hint="请选择托管模块"
+                        android:text=""
+                        android:textColorHint="@color/color_text_b3"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/color_dedede" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_padding_50"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="*"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="托管ID"
+                        android:textColor="@color/text_color_black" />
+
+                    <EditText
+                        android:id="@+id/et_trusteeship_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:textColor="@color/text_color_black"
+                        android:hint="请输入托管ID"
+                        android:text=""
+                        android:textColorHint="@color/color_text_b3"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/color_dedede" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_padding_50"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="*"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="托管金额"
+                        android:textColor="@color/text_color_black" />
+
+                    <EditText
+                        android:id="@+id/et_trusteeship_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textColor="@color/text_color_black"
+                        android:gravity="right"
+                        android:hint="请输入托管金额"
+                        android:text=""
+                        android:textColorHint="@color/color_text_b3"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="元"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/color_dedede" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_padding_50"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="*"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="生效日期"
+                        android:textColor="@color/text_color_black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_trusteeship_start_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="right"
+                            android:hint="年/月/日"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_13sp"
+                            android:paddingRight="10dp"
+                            android:text=""
+                            android:textColorHint="@color/color_text_b3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="—"
+                            android:textColor="@color/text_color_black" />
+
+                        <TextView
+                            android:id="@+id/tv_trusteeship_end_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="right"
+                            android:hint="年/月/日"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_13sp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text=""
+                            android:textColorHint="@color/color_text_b3" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_padding_50"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="*"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="手机号码"
+                        android:textColor="@color/text_color_black" />
+
+                    <EditText
+                        android:id="@+id/et_trusteeship_mobile_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textColor="@color/text_color_black"
+                        android:gravity="right"
+                        android:hint="请输入手机号"
+                        android:maxLength="11"
+                        android:text=""
+                        android:textColorHint="@color/color_text_b3"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/color_dedede" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_padding_50"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="*"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="联系人"
+                        android:textColor="@color/text_color_black" />
+
+                    <EditText
+                        android:id="@+id/et_trusteeship_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="请输入联系人"
+                        android:maxLength="7"
+                        android:textColor="@color/text_color_black"
+                        android:text=""
+                        android:textColorHint="@color/color_text_b3"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_padding_50"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="*"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="描述说明"
+                        android:textColor="@color/text_color_black" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp">
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/color_dedede" />
+
+                    <EditText
+                        android:id="@+id/et_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="请您描述一下具体情况"
+                        android:text=""
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/color_dedede" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="上传凭证"
+                    android:textColor="@color/text_color_black" />
+
+                <com.windmillsteward.jukutech.customview.MyGridView
+                    android:id="@+id/gv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <com.windmillsteward.jukutech.utils.StateButton
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hight_padding_50"
+                android:layout_marginLeft="72dp"
+                android:layout_marginRight="72dp"
+                android:layout_marginTop="30dp"
+                android:text="提交"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/color_them_deep"
+                app:pressedBackgroundColor="@color/color_them_deep"
+                app:radius="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="提交申请后会有客服人员和您联系"
+                android:textColor="@color/color_text_b3" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

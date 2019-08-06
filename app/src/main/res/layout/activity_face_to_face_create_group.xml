@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_f7f5f6"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_tag1"
+        android:textColor="@color/black"
+        android:layout_width="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="left"
+        android:textSize="@dimen/text_size_18sp"
+        android:text="数字验证" />
+
+    <TextView
+        android:id="@+id/tv_tag2"
+        android:layout_below="@id/tv_tag1"
+        android:textColor="@color/text_9399a5"
+        android:layout_width="280dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="5dp"
+        android:textSize="@dimen/text_size_16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="和身边的朋友输入同样的四个数字，进入同一个群聊" />
+
+
+    <!--<com.windmillsteward.jukutech.customview.PwdEditText-->
+        <!--android:id="@+id/et_input"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--app:pwdCount="4"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:layout_height="55dp" />-->
+
+    <com.windmillsteward.jukutech.customview.PwdEditTextTwo
+        android:id="@+id/et_pwd"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:background="@color/transparent"
+        android:cursorVisible="false"
+
+        android:text=""
+        android:layout_below="@id/tv_tag2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:maxLength="4"
+        app:length="4"
+        app:password="false"/>
+
+    <com.windmillsteward.jukutech.customview.PwdKeyboardView
+        android:id="@+id/key_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#919191"
+        android:layout_alignParentBottom="true"
+        android:keyBackground="@drawable/selector_key_board"
+        android:keyTextColor="@android:color/black"
+        android:keyTextSize="26sp"
+        android:shadowRadius="0" />
+
+</RelativeLayout>

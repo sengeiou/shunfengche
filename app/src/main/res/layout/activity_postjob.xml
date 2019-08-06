@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#eeeeee"
+                android:layout_height="130dp">
+
+                <com.windmillsteward.jukutech.customview.CircleImageView
+                    android:id="@+id/civ_header"
+                    android:src="@mipmap/icon_default_head"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp" />
+
+                <TextView
+                    android:id="@+id/tv_uploadHeader"
+                    android:text="点击长传头像"
+                    android:textColor="#333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#999999"
+                android:orientation="vertical"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="个人资料"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

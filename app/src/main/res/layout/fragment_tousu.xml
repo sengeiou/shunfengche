@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/et_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_border_gray_dad9d9"
+        android:gravity="left|top"
+        android:hint="请输入投诉内容"
+        android:minLines="7"
+        android:padding="10dp"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/text_size_14sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:text="选用照片或实时拍摄"
+        android:textColor="#394043"
+        android:textSize="@dimen/text_size_15sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_register"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="#f1f0f0"
+        android:textSize="@dimen/text_size_16sp" />
+
+</LinearLayout>

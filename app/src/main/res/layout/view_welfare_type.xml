@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_welfare_type"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:textSize="@dimen/text_size_11sp"
+    android:background="@drawable/shape_text_welfare_bg"
+    android:textColor="@color/color_them"
+    android:text="" >
+
+</TextView>

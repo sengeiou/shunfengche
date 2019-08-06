@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:26+'
+//    compile 'com.github.RollCretin:CommUtil:v1.0'
+}
+ext {
+
+
+    package_repo = 'maven' // bintray上的仓库名，一般为maven
+    package_type = 'aar'  // 输出类型
+    package_group = 'top.wuhaojie' // JCenter的GroupId
+    package_artifact = 'Scroll-Number' // JCenter的ArtifactId
+    package_version = '1.0'  // JCenter的VersionId
+    package_description = 'A tool for Android'
+
+    // 以下选填
+//    siteUrl = 'https://github.com/'
+//    gitUrl = 'https://github.com/'
+
+//    bintrayRepo = 'maven'////bintray上的仓库名，一般为maven
+//    bintrayName = 'ScrollNumber'//bintray上的项目名
+
+//    publishedGroupId = 'top.wuhaojie'//JCenter的GroupId
+//    artifact = 'Library'//JCenter的ArtifactId
+
+    siteUrl = 'https://github.com/a-voyager/ScrollNumber'
+    gitUrl = 'https://github.com/a-voyager/ScrollNumber'
+
+//    libraryVersion = '1.0.0'//版本号
+//    libraryName = 'ScrollNumber'//项目名字，没什么用
+//    libraryDescription = 'A widget for Android'//项目描述，没什么用
+
+    //开发者信息
+    developerId = 'w19961009'
+    developerName = 'wuhaojie'
+    developerEmail = 'w19961009@126.com'
+
+    //以上所有信息自行修改，以下不变
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ['Apache-2.0']
+}
+apply from: 'https://raw.githubusercontent.com/Jude95/JCenter/v2/bintray.gradle'

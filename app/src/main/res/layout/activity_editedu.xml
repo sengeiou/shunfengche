@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_them_alpha"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar_detail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="*"
+                android:textColor="@color/color_red"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="学校名称"
+                style="@style/margin_l_r_10dp"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_school_name"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:hint="输入"
+                android:gravity="right"
+                android:textSize="@dimen/text_size_16sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:textColor="@color/text_color_black"
+                android:background="@color/color_white"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@mipmap/icon_jump"
+                android:layout_width="10dp"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/color_divider"
+            android:layout_marginLeft="10dp"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="*"
+                android:textColor="@color/color_red"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="专业名称"
+                style="@style/margin_l_r_10dp"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_major_name"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:hint="输入"
+                android:gravity="right"
+                android:textSize="@dimen/text_size_16sp"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:textColor="@color/text_color_black"
+                android:background="@color/color_white"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/icon_jump"
+                android:layout_width="10dp"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/color_divider"
+            android:layout_marginLeft="10dp"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="*"
+                android:textColor="@color/color_red"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="开学时间"
+                style="@style/margin_l_r_10dp"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/text_color_black"
+                android:layout_marginBottom="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:textSize="@dimen/text_size_16sp"
+                android:maxLines="1"
+                android:hint="选择时间"
+                android:textColor="@color/text_color_black"
+                android:background="@color/color_white"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@mipmap/icon_jump"
+                android:layout_width="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/color_divider"
+            android:layout_marginLeft="10dp"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="*"
+                android:textColor="@color/color_red"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="毕业时间"
+                style="@style/margin_l_r_10dp"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/text_color_black"
+                android:layout_marginBottom="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:textSize="@dimen/text_size_16sp"
+                android:maxLines="1"
+                android:hint="选择时间"
+                android:textColor="@color/text_color_black"
+                android:background="@color/color_white"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@mipmap/icon_jump"
+                android:layout_width="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:text="删除"
+            style="@style/margin_l_r_10dp"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/text_size_16sp"
+            android:textColor="@color/color_white"
+            android:layout_marginBottom="8dp"
+            android:layout_width="220dp"
+            android:gravity="center"
+            android:background="@drawable/shape_btn_them_deep_bg"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

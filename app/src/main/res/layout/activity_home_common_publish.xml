@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/ll_indicator_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.windmillsteward.jukutech.customview.FlyBanner
+                        android:id="@+id/flyBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="156dp" />
+
+                    <LinearLayout
+                        android:id="@+id/lay_ll_tab_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="-50dp"
+                        android:background="@mipmap/icon_rencai_home_tab_transparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_left"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/icon_rencai_home_tab_s"
+                            android:gravity="center"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:text="123"
+                            android:textColor="@color/common_color"
+                            android:textSize="@dimen/text_size_17sp" />
+
+                        <TextView
+                            android:id="@+id/tv_right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/icon_rencai_home_tab_n"
+                            android:gravity="center"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"
+                            android:text=""
+                            android:textColor="#333333"
+                            android:textSize="@dimen/text_size_17sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appBarLayout"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

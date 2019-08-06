@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_5"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_line" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="等待接单"
+                android:textColor="#36acf0"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <TextView
+                android:id="@+id/tv_hongdian"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_round_solid_red"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="跑腿"
+                android:textColor="#394043"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <TextView
+                android:id="@+id/tv_right_bottom"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_bg_blue_60bdd1"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="3dp"
+                android:text="确认完成工作"
+                android:textColor="#3172f4"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:text="联系人：张三 "
+                    android:textColor="#9399a5"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_info_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5dp"
+                        android:layout_marginTop="2dp"
+                        android:text="联系电话：15826644011"
+                        android:textColor="#9399a5"
+                        android:textSize="@dimen/text_size_14sp" />
+                    <ImageView
+                        android:id="@+id/iv_phone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_yellow_phone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/location"
+                    android:drawablePadding="5dp"
+                    android:lineSpacingExtra="10dp"
+                    android:paddingTop="10dp"
+                    android:text="淄博市张店区"
+                    android:textColor="#5f87ab"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_right_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:text="到这里去"
+                    android:textColor="#3172f4"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018/09/13"
+                    android:textColor="#9399a5"
+                    android:textSize="@dimen/text_size_12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/order_zhihui"
+        android:gravity="center"
+        android:text="智慧生活订单"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12sp" />
+
+</RelativeLayout>

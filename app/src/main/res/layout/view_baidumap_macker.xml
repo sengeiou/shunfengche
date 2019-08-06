@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="138dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/icon_address"
+    android:layout_height="48dp">
+
+    <TextView
+        android:id="@+id/tv_hotel_name"
+        android:text=""
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/text_size_12sp"
+        android:layout_width="75dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_price"
+        android:text="导航"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_14sp"
+        android:gravity="center"
+        android:background="@color/color_them"
+        android:layout_width="38dp"
+        android:layout_height="18dp" />
+</LinearLayout>

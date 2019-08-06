@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_5"
+        android:orientation="horizontal"
+        android:paddingTop="39dp">
+
+        <com.windmillsteward.jukutech.customview.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/default_avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="张小华    女|25岁"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_17sp" />
+
+                <TextView
+                    android:id="@+id/tv_pipridu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="匹配度：95%"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_right_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/location"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingRight="7dp"
+                android:text="淄博市张店区"
+                android:textColor="#5f87ab"
+                android:textSize="@dimen/text_size_12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_line"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/order_qzzp"
+        android:gravity="center"
+        android:text="求职招聘"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12sp" />
+    <TextView
+        android:id="@+id/tv_hongdian"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_round_solid_red"
+        android:visibility="gone" />
+</RelativeLayout>

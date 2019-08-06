@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_bg_f0f0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_hight_42"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_trusteeship_module_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <com.windmillsteward.jukutech.utils.StateButton
+            android:id="@+id/btn_status"
+            android:layout_width="60dp"
+            android:layout_height="21dp"
+            android:layout_marginRight="12dp"
+            android:padding="0dp"
+            android:text="待审核"
+            android:textColor="@color/color_ffa800"
+            android:textSize="@dimen/text_size_12sp"
+            app:normalBackgroundColor="@color/color_fff3e5"
+            app:pressedBackgroundColor="@color/color_fff3e5"
+            app:radius="7dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_trusteeship_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_12sp" />
+    </LinearLayout>
+</LinearLayout>

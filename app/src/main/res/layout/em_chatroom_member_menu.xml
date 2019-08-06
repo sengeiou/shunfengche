@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              >
+
+    <LinearLayout
+        style="@style/chat_room_menu_item_wrapper"
+        android:id="@+id/menu_item_add_admin"
+        >
+        <TextView
+            android:text="添加为管理员"
+            style="@style/chat_room_menu_item_text_style"/>
+        <TextView style="@style/chat_room_menu_item_splitter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/chat_room_menu_item_wrapper"
+        android:id="@+id/menu_item_rm_admin"
+        >
+        <TextView
+            android:text="移除管理员"
+            style="@style/chat_room_menu_item_text_style"/>
+        <TextView style="@style/chat_room_menu_item_splitter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/chat_room_menu_item_wrapper"
+        android:id="@+id/menu_item_transfer_owner"
+        android:visibility="visible"
+        >
+        <TextView
+            android:text="移交群"
+            style="@style/chat_room_menu_item_text_style"/>
+        <TextView style="@style/chat_room_menu_item_splitter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/chat_room_menu_item_wrapper"
+        android:id="@+id/menu_item_remove_member"
+        >
+        <TextView
+            android:text="移除群聊成员"
+            style="@style/chat_room_menu_item_text_style"/>
+        <TextView style="@style/chat_room_menu_item_splitter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/chat_room_menu_item_wrapper"
+        android:id="@+id/menu_item_add_to_blacklist"
+        android:visibility="gone"
+        >
+        <TextView
+            android:text="添加至黑名单"
+            style="@style/chat_room_menu_item_text_style"/>
+        <TextView style="@style/chat_room_menu_item_splitter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/chat_room_menu_item_wrapper"
+        android:id="@+id/menu_item_remove_from_blacklist"
+        android:visibility="gone"
+        >
+        <TextView
+            android:text="从黑名单移除"
+            style="@style/chat_room_menu_item_text_style"/>
+        <TextView style="@style/chat_room_menu_item_splitter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/chat_room_menu_item_wrapper"
+        android:id="@+id/menu_item_mute"
+        android:visibility="gone"
+        >
+        <TextView
+            android:text="禁言"
+            style="@style/chat_room_menu_item_text_style"/>
+        <TextView style="@style/chat_room_menu_item_splitter"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/chat_room_menu_item_wrapper"
+        android:id="@+id/menu_item_unmute"
+        >
+        <TextView
+            android:text="解除禁言"
+            android:visibility="gone"
+            style="@style/chat_room_menu_item_text_style"/>
+        <TextView style="@style/chat_room_menu_item_splitter"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_detail"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="@color/color_bg_f0f0"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/color_white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:text="类别："
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:text="发布："
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:textColor="@color/color_text_78"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:background="@color/color_bg_f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="需求描述"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:textColor="@color/color_23abac"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <include layout="@layout/view_line_marginleft_15"/>
+
+                    <com.windmillsteward.jukutech.customview.ExpandTextView
+                        android:id="@+id/expand_desc"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        app:contentTextSize="@dimen/text_size_14sp"
+                        app:textContentColor="@color/text_color_black"
+                        app:expandHint="查看更多"
+                        app:hintTextSize="@dimen/text_size_14sp"
+                        app:foldHint="收起"
+                        app:textHintColor="@color/color_23abac"
+                        app:minVisibleLines="5"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/color_bg_f0f0"
+                    android:layout_height="67dp">
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:textColor="@color/color_23abac"
+                        android:text="托管ID："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_hosted_id"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:text=""
+                        android:textColor="@color/text_color_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shape_bottom_shadow"
+            android:layout_height="10dp"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_delete"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/icon_rub"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="删除"
+                    android:textColor="@color/color_5d5f69"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_edit"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@mipmap/icon_writeagain"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="wrap_content"
+                    android:text="编辑"
+                    android:textColor="@color/color_5d5f69"
+                    android:textSize="@dimen/text_size_13sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

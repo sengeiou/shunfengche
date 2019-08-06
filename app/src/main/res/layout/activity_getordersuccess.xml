@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@mipmap/icon_finish"
+                android:layout_width="63dp"
+                android:layout_height="63dp" />
+
+            <TextView
+                android:text="抢单成功"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:text="返回"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_blue"
+                    android:layout_width="135dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_getordersuccess_back"
+                    android:layout_height="42dp" />
+
+                <TextView
+                    android:id="@+id/tv_order"
+                    android:text="去订单"
+                    android:visibility="gone"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/color_white"
+                    android:layout_width="135dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_btn_them_deep_bg"
+                    android:layout_height="42dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

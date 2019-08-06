@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="17dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="管家推荐"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="21sp"/>
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="18dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test_pic01" />
+
+</LinearLayout>

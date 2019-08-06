@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.newpage.yizhan.zhongjie_tgz.PingjiaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="25dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务评价"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <ImageView
+            android:id="@+id/iv_01"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/starts_unselect" />
+
+        <ImageView
+            android:id="@+id/iv_02"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/starts_unselect" />
+
+        <ImageView
+            android:id="@+id/iv_03"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/starts_unselect" />
+
+        <ImageView
+            android:id="@+id/iv_04"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/starts_unselect" />
+
+        <ImageView
+            android:id="@+id/iv_05"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/starts_unselect" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="技能评价"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <ImageView
+            android:id="@+id/iv_001"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/starts_unselect" />
+
+        <ImageView
+            android:id="@+id/iv_002"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/starts_unselect" />
+
+        <ImageView
+            android:id="@+id/iv_003"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/starts_unselect" />
+
+        <ImageView
+            android:id="@+id/iv_004"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/starts_unselect" />
+
+        <ImageView
+            android:id="@+id/iv_005"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/starts_unselect" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:text="评价内容"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <EditText
+        android:id="@+id/et_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_border_gray_dad9d9"
+        android:gravity="left|top"
+        android:hint="请输入您对该服务的评价"
+        android:minLines="7"
+        android:padding="10dp"
+        android:textColor="@color/color_aaaaaa"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/selector_btn_register"
+        android:gravity="center"
+        android:text="提交评价"
+        android:textColor="#f1f0f0"
+        android:textSize="@dimen/text_size_16sp" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_f7f5f6"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="未领取的红包，将于24小时后发起退款"
+        android:textColor="@color/text_9399a5"
+        android:textSize="14sp" />
+</LinearLayout>

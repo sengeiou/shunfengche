@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/color_bg_f0f0"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/color_white"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="247dp">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_uploadbg_insurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/iv_pic"
+                    android:src="@mipmap/icon_up_photo"
+                    android:layout_width="97dp"
+                    android:layout_gravity="center"
+                    android:layout_height="97dp" />
+
+                <TextView
+                    android:id="@+id/tv_click_upload"
+                    android:layout_gravity="center"
+                    android:text="点击上传图片"
+                    android:layout_marginTop="70dp"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:textColor="@color/color_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <View
+                android:background="@color/color_bg_f0f0"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="标题"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_text_b3"
+                    android:hint="1-30字"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="险种"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_insurance_type"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:hint="请选择险种"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="承保公司"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_insurance_company"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_text_b3"
+                    android:hint="请输入承保公司"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="保险介绍"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_insurance_desc"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="投保须知"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_insurance_note"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/color_bg_f0f0"
+                android:layout_height="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="联系人"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_contacts"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:maxLength="7"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_text_b3"
+                    android:hint="请输入联系人"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="联系电话"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:text=""
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_text_b3"
+                    android:hint="请输联系电话"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:textSize="@dimen/text_size_16sp"
+                    android:text="*"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="发布地区"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_publish_area"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:gravity="right"
+                    android:hint="请选择地区"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:background="@color/color_white"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/icon_jump"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:background="@color/color_bg_f0f0"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingBottom="40dp">
+
+                <TextView
+                    android:id="@+id/tv_publish"
+                    android:text="发布"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_btn_them_deep_bg"
+                    android:textColor="@color/color_white"
+                    android:layout_width="218dp"
+                    android:layout_height="42dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

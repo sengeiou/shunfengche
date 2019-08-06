@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.windmillsteward.jukutech.customview.FlyBanner
+        android:id="@+id/fly_top_anner"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_bg" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/header_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_new_home_keephouse" />
+
+            <com.gongwen.marqueen.MarqueeView
+                android:id="@+id/marqueeView"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:flipInterval="2500"
+                android:inAnimation="@anim/in_right"
+                android:outAnimation="@anim/out_left"
+                app:marqueeAnimDuration="2000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="8dp"
+                android:background="#d1d1d1" />
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="16dp"
+                android:text="更多"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#0d000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="管家推荐"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <com.windmillsteward.jukutech.customview.FlyBanner
+            android:id="@+id/fly_second_banner"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

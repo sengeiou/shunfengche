@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/icon_new_point_n" android:state_enabled="false"></item>
+    <item android:drawable="@mipmap/icon_new_point_s" android:state_enabled="true"></item>
+</selector>

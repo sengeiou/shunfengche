@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="64dp"
+    android:layout_height="64dp">
+    
+    <ImageView
+        android:src="@mipmap/qipao"
+        android:layout_width="64dp"
+        android:layout_height="64dp" />
+
+    <com.windmillsteward.jukutech.customview.CircleImageView
+        android:layout_width="50dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_avatar"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/default_avatar"
+        android:layout_marginTop="3dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

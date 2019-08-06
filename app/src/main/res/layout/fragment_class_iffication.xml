@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxWidth="200dp"
+                android:padding="9.5dp"
+                android:singleLine="true"
+                android:text="分类"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdd4dc" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_f3f4f6" />
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

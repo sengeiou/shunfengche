@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_detail"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/color_white"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@color/color_white"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="82dp">
+
+                <ImageView
+                    android:id="@+id/iv_pic"
+                    android:src="@mipmap/icon_default_pic"
+                    android:scaleType="centerCrop"
+                    android:layout_width="72dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="72dp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:text=""
+                        android:textSize="@dimen/text_size_13sp"
+                        android:maxLines="2"
+                        android:layout_marginTop="7dp"
+                        android:ellipsize="end"
+                        android:textColor="@color/text_color_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_model"
+                        android:text=""
+                        android:layout_below="@+id/tv_title"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/text_size_13sp"
+                        android:textColor="@color/color_text_999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:text=""
+                        android:textColor="@color/color_price"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="29dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_number"
+                        android:text=""
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="50dp"
+                        android:textColor="@color/color_text_999"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:background="@color/color_bg_f0f0"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:text="*"
+                    android:textSize="15sp"
+                    android:visibility="visible"
+                    android:textColor="@color/color_price"
+                    android:layout_width="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="申请原因:"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:hint="选择申请原因"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:drawableRight="@mipmap/icon_open"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:text="*"
+                    android:textSize="15sp"
+                    android:visibility="visible"
+                    android:textColor="@color/color_price"
+                    android:layout_width="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="退款方式:"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_refund_way"
+                    android:hint="选择退款方式"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:drawableRight="@mipmap/icon_open"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <include layout="@layout/view_line_marginleft_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:text="*"
+                    android:textSize="15sp"
+                    android:visibility="invisible"
+                    android:textColor="@color/color_price"
+                    android:layout_width="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="退款说明"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_user_remark"
+                android:hint="选填"
+                android:lines="8"
+                android:gravity="left"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="17dp"
+                android:padding="5dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="@dimen/text_size_15sp"
+                android:background="@drawable/shape_input_stroke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:background="@color/color_bg_f0f0"
+                android:layout_height="165dp">
+
+                <TextView
+                    android:id="@+id/tv_apply"
+                    android:text="提交申请"
+                    android:layout_marginTop="78dp"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_btn_them_deep_bg"
+                    android:textColor="@color/color_white"
+                    android:layout_width="218dp"
+                    android:layout_height="42dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

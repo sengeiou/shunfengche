@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.windmillsteward.jukutech.customview.CommonRefreshLayout
+        android:id="@+id/common_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg_f0f0">
+
+
+        <com.windmillsteward.jukutech.customview.MyScrollView
+            android:id="@+id/sv_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.windmillsteward.jukutech.customview.FlyBanner
+                        android:id="@+id/vp_top_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@android:color/white" />
+
+
+                </RelativeLayout>
+
+                <com.windmillsteward.jukutech.customview.MyGridView
+                    android:id="@+id/gv_functions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="5"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/icon_housekeeper_alerts_text" />
+
+                    <com.gongwen.marqueen.MarqueeView
+                        android:id="@+id/marqueeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:flipInterval="2500"
+                        android:inAnimation="@anim/in_right"
+                        android:outAnimation="@anim/out_left"
+                        app:marqueeAnimDuration="2000" />
+
+                    <TextView
+                        android:id="@+id/tv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="更多"
+                        android:textColor="@color/color_23abac" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/icon_housekeeper_recommend_text" />
+
+                    <com.windmillsteward.jukutech.customview.FlyBanner
+                        android:id="@+id/vp_middle_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_left_travel_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="国内旅游"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_right_travel_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="境外旅游"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <com.windmillsteward.jukutech.customview.MyGridView
+                            android:id="@+id/gv_chinese_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:horizontalSpacing="30dp"
+                            android:numColumns="2"
+                            android:scrollbars="none"
+                            android:verticalSpacing="20dp" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/darker_gray" />
+
+                        <com.windmillsteward.jukutech.customview.MyGridView
+                            android:id="@+id/gv_europe_and_america_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:horizontalSpacing="30dp"
+                            android:numColumns="2"
+                            android:scrollbars="none"
+                            android:verticalSpacing="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1px"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="到底啦"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1px"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.windmillsteward.jukutech.customview.MyScrollView>
+
+    </com.windmillsteward.jukutech.customview.CommonRefreshLayout>
+
+    <ImageView
+        android:id="@+id/iv_scroll_to_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/icon_top" />
+
+    <ImageView
+        android:id="@+id/iv_grab_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/icon_grab" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_ll_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_23abac"
+            android:orientation="vertical"
+            android:visibility="gone"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon__white_arrow_down"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:text="地区"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <LinearLayout
+                android:id="@+id/lay_ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_retangle_circle_r3_bg_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/icon_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableRight="@mipmap/icon__white_arrow_down"
+                    android:text="搜索"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:src="@mipmap/icon_scan" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@mipmap/icon_message" />
+
+                <TextView
+                    android:id="@+id/tv_message_count"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignRight="@id/iv_message"
+                    android:visibility="gone"
+                    android:background="@drawable/shape_round_solid_red"
+                    android:gravity="center"
+                    android:text="13"
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/iv_red_count"-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:layout_alignRight="@id/iv_message"-->
+                <!--android:src="@drawable/shape_round_solid_red" />-->
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout><!--</LinearLayout>-->

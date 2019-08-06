@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_check_pending"
+                style="@style/home_bottom"
+                android:textSize="@dimen/text_size_13sp"
+                android:background="@drawable/selector_tab_status_follow_theme"
+                android:text="待审核" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_gray" />
+
+            <RadioButton
+                android:id="@+id/rb_hosting"
+                style="@style/home_bottom"
+                android:textSize="@dimen/text_size_13sp"
+                android:background="@drawable/selector_tab_status_follow_theme"
+                android:text="托管中" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_gray" />
+
+            <RadioButton
+                android:id="@+id/rb_dispute_order"
+                style="@style/home_bottom"
+                android:textSize="@dimen/text_size_13sp"
+                android:background="@drawable/selector_tab_status_follow_theme"
+                android:text="纠纷订单" />
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_gray" />
+
+            <RadioButton
+                android:id="@+id/rb_completed"
+                style="@style/home_bottom"
+                android:textSize="@dimen/text_size_13sp"
+                android:background="@drawable/selector_tab_status_follow_theme"
+                android:text="已完成" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay_ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+</LinearLayout>

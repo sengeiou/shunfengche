@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.windmillsteward.jukutech.customview.MyListView
+                android:id="@+id/lv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/color_gray"
+                android:dividerHeight="1px"/>
+
+            <com.windmillsteward.jukutech.utils.StateButton
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_hight_42"
+                android:layout_marginLeft="30dp"
+                android:drawablePadding="0dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="32dp"
+                android:text="添加支付宝账号"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/text_blue"
+                app:pressedBackgroundColor="@color/text_blue"
+                app:radius="20dp" />
+
+            <com.windmillsteward.jukutech.utils.StateButton
+                android:id="@+id/btn_add_bank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_hight_42"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="32dp"
+                android:text="添加银行卡账号"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/text_blue"
+                app:pressedBackgroundColor="@color/text_blue"
+                app:radius="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

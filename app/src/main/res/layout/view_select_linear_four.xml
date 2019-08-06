@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_root_select"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="46dp">
+
+            <LinearLayout
+                android:id="@+id/linear_area"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_tab1"
+                    android:text="区域"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:maxLength="5"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_color_black"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/iv_area_point"
+                    android:src="@mipmap/icon_select_down"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="46dp">
+
+            <LinearLayout
+                android:id="@+id/linear_sex"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_tab2"
+                    android:text="性别"
+                    android:maxLength="5"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_color_black"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/iv_sex_point"
+                    android:src="@mipmap/icon_select_down"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="46dp">
+            <LinearLayout
+                android:id="@+id/linear_salary"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_tab3"
+                    android:text="薪资"
+                    android:maxLength="5"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/iv_salary_point"
+                    android:src="@mipmap/icon_select_down"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="46dp">
+            <LinearLayout
+                android:id="@+id/linear_more"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_tab4"
+                    android:text="更多"
+                    android:maxLines="5"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/iv_more_point"
+                    android:src="@mipmap/icon_select_down"
+                    android:layout_width="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_divider"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

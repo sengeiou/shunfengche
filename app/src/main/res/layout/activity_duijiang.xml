@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="50dp"
+        android:hint="请输入兑奖码"
+        android:gravity="center"
+        android:maxLines="1"
+        android:background="@drawable/shape_text_white_bg_stro_black"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:maxLength="10" />
+
+    <com.windmillsteward.jukutech.utils.StateButton
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_hight_42"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:text="提交"
+        android:textColor="@android:color/white"
+        app:normalBackgroundColor="@color/text_blue"
+        app:pressedBackgroundColor="@color/text_blue"
+        app:radius="20dp" />
+</LinearLayout>

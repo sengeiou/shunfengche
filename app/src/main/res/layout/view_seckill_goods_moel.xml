@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#00000000"
+        android:layout_height="115dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="@color/color_white"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_commodity_price"
+                android:textColor="@color/color_price"
+                android:text=""
+                android:textSize="@dimen/text_size_14sp"
+                android:layout_marginTop="29dp"
+                android:layout_marginLeft="115dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_commodity_inventory"
+                android:text=""
+                android:textSize="@dimen/text_size_14sp"
+                android:textColor="@color/text_color_black"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:scaleType="centerCrop"
+            android:layout_width="94dp"
+            android:background="@color/color_white"
+            android:padding="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="94dp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:src="@mipmap/icon_deleteimg"
+            android:layout_width="25dp"
+            android:layout_margin="15dp"
+            android:layout_gravity="right"
+            android:layout_height="25dp" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_white"
+        android:layout_height="0.5dp">
+        <include layout="@layout/view_line_marginleft_15"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="型号尺寸"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.windmillsteward.jukutech.customview.flowlayout.TagFlowLayout
+            android:id="@+id/commodity_model_name"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"/>
+
+
+        <include layout="@layout/view_line_marginleft_15"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="78dp">
+
+            <TextView
+                android:text="数量"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/text_color_black"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/iv_reduce"
+                android:text="-"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:src="@mipmap/icon_reduce_d"
+                android:background="@drawable/shape_shopping_cart_list_frame"
+                android:layout_width="29dp"
+                android:layout_height="29dp"  />
+            <TextView
+                android:id="@+id/tv_number"
+                android:text="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shape_shopping_cart_list_frame"
+                android:layout_width="87dp"
+                android:gravity="center"
+                android:layout_height="29dp" />
+            <TextView
+                android:id="@+id/iv_add"
+                android:text="+"
+                android:textSize="@dimen/text_size_20sp"
+                android:gravity="center"
+                android:background="@drawable/shape_shopping_cart_list_frame"
+                android:src="@mipmap/icon_add_d"
+                android:layout_width="29dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="29dp" />
+
+        </LinearLayout>
+        <include layout="@layout/view_line_marginleft_15"/>
+        <View
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:text="确定"
+                android:textSize="@dimen/text_size_16sp"
+                android:background="@color/color_them_deep"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_add"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_height="45dp">
+
+            <TextView android:visibility="gone"
+                android:id="@+id/tv_add_to_car"
+                android:text="加入购物车"
+                android:textSize="@dimen/text_size_16sp"
+                android:background="@color/color_them_deep"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_add_buy"
+                android:text="立即秒杀"
+                android:textSize="@dimen/text_size_16sp"
+                android:background="#fd7b7d"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

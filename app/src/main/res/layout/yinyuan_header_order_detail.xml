@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_ll_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape_wenxintishi"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@mipmap/default_avatar" />
+
+                <TextView
+                    android:id="@+id/tv_name_and_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/iv_avatar"
+                    android:text="张晓明  35岁"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_pipei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/tv_name_and_age"
+                    android:text="匹配度：80%"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <LinearLayout
+                    android:id="@+id/lay_ll_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name_and_age"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/iv_avatar"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_diqu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="淄博张店区"
+                        android:textColor="#5f87ab"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="|"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_edu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="bottom"
+                        android:text="本科"
+                        android:textColor="#5f87ab"
+                        android:textSize="@dimen/text_size_12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lay_ll_address"
+                    android:layout_toRightOf="@id/iv_avatar"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_gangwei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="8dp"
+                        android:text="副总经理"
+                        android:textColor="@color/color_3fd5c2"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="|"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="178cm"
+                        android:textColor="@color/text_ff8819"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/yellow_phone" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

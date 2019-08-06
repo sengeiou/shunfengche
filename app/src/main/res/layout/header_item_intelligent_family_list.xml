@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="@dimen/text_size_13sp"
+        android:id="@+id/tv_text"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_border_gray_dad9d9"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="#394043"
+        tools:text="跑腿" />
+</LinearLayout>

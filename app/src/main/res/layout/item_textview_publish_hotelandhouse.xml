@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="67dp"
+    android:text="24小时热水"
+    android:textColor="@drawable/select_buyhouse_popup_text"
+    android:background="@drawable/select_buyhouse_popup_bg"
+    android:textSize="@dimen/text_size_13sp"
+    android:layout_height="28dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="7dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:gravity="center"/>

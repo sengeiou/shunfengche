@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_detail"/>
+    <com.windmillsteward.jukutech.customview.CommonRefreshLayout
+        android:id="@+id/common_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:background="@color/color_bg_f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.windmillsteward.jukutech.customview.CommonRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_add_area"
+        android:text="添加新地址"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        android:textColor="@color/color_white"
+        android:background="@color/color_them_deep"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+</LinearLayout>

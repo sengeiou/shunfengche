@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/color_them_alpha"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="以下资料仅用于平台审核，不外传"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="3"
+                    android:text="企业名称"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <EditText
+                    android:id="@+id/et_corporate_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="7"
+                    android:background="@color/color_white"
+                    android:gravity="right"
+                    android:hint="输入"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="3"
+                    android:text="企业地址"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="7"
+                    android:background="@color/color_white"
+                    android:gravity="right"
+                    android:hint="输入地址"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="3"
+                    android:text="法人姓名"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="7"
+                    android:background="@color/color_white"
+                    android:gravity="right"
+                    android:hint="输入"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="3"
+                    android:text="身份证号码"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <EditText
+                    android:id="@+id/et_itcard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="7"
+                    android:background="@color/color_white"
+                    android:gravity="right"
+                    android:maxLength="18"
+                    android:hint="输入法人身份证号"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_15sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line_marginleft_15" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_guimo"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:drawableRight="@mipmap/icon_gray_arrow_right"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="规模"-->
+                <!--android:textColor="@color/text_color_black"-->
+                <!--android:textSize="@dimen/text_size_15sp" />-->
+
+            <!--<include layout="@layout/view_line_marginleft_15" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_xingzhi"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:drawableRight="@mipmap/icon_gray_arrow_right"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="性质"-->
+                <!--android:textColor="@color/text_color_black"-->
+                <!--android:textSize="@dimen/text_size_15sp" />-->
+
+            <!--<include layout="@layout/view_line_marginleft_15" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_hangye"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:drawableRight="@mipmap/icon_gray_arrow_right"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="行业"-->
+                <!--android:textColor="@color/text_color_black"-->
+                <!--android:textSize="@dimen/text_size_15sp" />-->
+
+            <!--<include layout="@layout/view_line_marginleft_15" />-->
+
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/color_them_alpha"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_margin="18dp"
+                    android:id="@+id/iv_license"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_license" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="请上传营业执照"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:layout_margin="18dp"
+                    android:id="@+id/iv_idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_id" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="请上传法人身份证正面"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:layout_margin="18dp"
+                    android:id="@+id/iv_idcard_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_id_b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="请上传法人身份证反面"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+                <TextView
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="18dp"
+                    android:id="@+id/tv_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/shape_btn_logout"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

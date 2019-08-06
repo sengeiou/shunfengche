@@ -1,0 +1,374 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:fillViewport="true"
+    tools:context="com.windmillsteward.jukutech.activity.newpage.yizhan.zhongjie_tgz.YonggongDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="12dp"
+            android:text="更新时间：2017-10-11"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_11sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/default_avatar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="张爱国    男 | 25岁"
+                android:textColor="@color/color_text_666"
+                android:textSize="@dimen/text_size_12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="匹配度：90%"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="联系电话：13160503453"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_11sp" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="15dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:src="@mipmap/icon_phonenum" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/color_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学历"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_xueli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="大专"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从业经验"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_jingyan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="1~3年"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="育儿嫂类型"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_leixing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="初级育儿嫂"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作时间"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_shijian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="住家育儿嫂"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="薪资要求"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_xinzi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="200元/天"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="工作地区"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_diqu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:lineSpacingExtra="5dp"
+                android:text="张家区"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="服务内容"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_nianji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:lineSpacingExtra="5dp"
+                android:text="打扫卫生，买菜做饭"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_13sp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/color_bg" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="自我介绍"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:lineSpacingExtra="5dp"
+            android:padding="16dp"
+            android:text="如果你无法简洁的表达你的想法，那只说明你还不够了解它。如果你无法简洁的表达你的想法，那只说明你还不够了解它。如果你无法简洁的表达你的想法，那只说明你还不够了解它。"
+            android:textColor="@color/color_aaaaaa"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:text="温馨提示"
+                android:textColor="#fbb939"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="1.如果您不满意请点击不感兴趣，管家会为您重新匹配。\n2.如果您满意请点击确认用工支付尾款，即可获得详细联系方式，完成订单。"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="27dp"
+                android:layout_marginTop="27dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/shape_bg_red_fe7171"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="确认完成工作"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/shape_bg_blue_3172f4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="确认用工支付尾款"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

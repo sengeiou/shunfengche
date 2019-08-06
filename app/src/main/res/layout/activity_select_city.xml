@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:src="@mipmap/icon_new_arrow_back" />
+
+            <LinearLayout
+                android:id="@+id/linear_search"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_toolbar_input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_search_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:drawableLeft="@mipmap/icon_search"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:hint="请输入城市名"
+                    android:imeOptions="actionSearch"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ExpandableListView
+                android:id="@+id/elv_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:groupIndicator="@null" />
+
+            <com.windmillsteward.jukutech.customview.AssortView
+                android:id="@+id/assort_member"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+    <!--</ScrollView>-->
+</LinearLayout>

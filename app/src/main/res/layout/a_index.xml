@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <EditText
+        android:hint="手机号"
+        android:id="@+id/et_phone"
+        android:text="13790097063"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="密码"
+        android:id="@+id/et_password"
+        android:text="123456"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.windmillsteward.jukutech.utils.StateButton
+        android:id="@+id/btn_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="测试登录"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_17sp"
+        app:normalBackgroundColor="@color/color_orange"
+        app:pressedBackgroundColor="@color/colorPrimaryDark"
+        app:radius="3dp"/>
+
+    <Button
+        android:text="人才驿站"
+        android:id="@+id/btn_talentInn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="智慧生活"
+        android:id="@+id/btn_intelligent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_house"
+        android:text="跳转到房屋租售"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_stay"
+        android:text="住宿旅游"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/tv_test"
+        android:text="智库"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="测试百度地图"
+        android:id="@+id/btn_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

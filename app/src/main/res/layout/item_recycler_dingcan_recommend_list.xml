@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundiv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_text_white_r4_bg_stro1_black"
+    android:gravity="center_vertical"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+
+    <com.windmillsteward.jukutech.customview.CustomRoundAngleImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_default_pic"
+        roundiv:left_top_radius="4dp"
+        roundiv:right_top_radius="4dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:maxLines="2"
+        android:layout_marginTop="5dp"
+        android:text="好久不见"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <com.windmillsteward.jukutech.customview.flowlayout.FlowLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="人均：40元"
+        android:textColor="@color/bg_ec613e"
+        android:textSize="@dimen/text_size_12sp" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_input"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shape_bottom_shadow"
+            android:layout_height="10dp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:background="@color/color_white"
+            android:layout_height="@dimen/toolbar_height">
+
+            <LinearLayout
+                android:id="@+id/linear_position"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_position"
+                    android:layout_width="20dp"
+                    android:src="@mipmap/icon_financing"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/tv_position"
+                    android:text="理财"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_resume"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_resume"
+                    android:layout_width="20dp"
+                    android:src="@mipmap/icon_loan_n"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/tv_resume"
+                    android:text="贷款"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_color_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

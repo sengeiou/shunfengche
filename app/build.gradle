@@ -1,0 +1,278 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.2'
+    defaultConfig {
+        applicationId "com.windmillsteward.jukutech"
+        minSdkVersion 21
+        targetSdkVersion 28
+
+        versionCode 100
+//        versionName "1.5.9"//        正式服
+        versionName "0.10.0"    //测试服
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi',
+                    'armeabi-v7a',
+                    'armeabi-v8a',
+                    'x86',
+                    'x86_64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                qqappid      : "1106737687",
+                JPUSH_PKGNAME: "com.windmillsteward.jukutech",
+                JPUSH_APPKEY : "183d8000d4fda22585638bd0", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-umeng_push_notification_default_sound.mp3otification_default_sound.mp3"//暂时填写默认值即可.
+        ]
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+        //不加的话会报错OutOfMemoryError: GC overhead limit exceeded
+        dexOptions {
+            incremental true
+            javaMaxHeapSize "4g"
+        }
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    signingConfigs {//签名配置
+        release {//release版签名配置
+            storeFile file('shunfengche.jks')//密钥文件路径
+            storePassword "shunfengche2018"//密钥文件密码
+            keyAlias "Shen Hao"//key别名
+            keyPassword "255200"//key密码
+        }
+        debug {//debug版签名配置
+            storeFile file('shunfengche.jks')//密钥文件路径
+            storePassword "shunfengche2018"//密钥文件密码
+            keyAlias "Shen Hao"//key别名
+            keyPassword "255200"//key密码
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false //开启dex字节码压缩，舍去未使用的jar和class文件
+//            zipAlignEnabled false //减少应用在运行时的内存消耗
+//            shrinkResources true //启用res资源过滤，会将项目中未使用到的图片变成1x1的小图，从而减少体积
+//            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false //开启dex字节码压缩，舍去未使用的jar和class文件
+//            zipAlignEnabled false //减少应用在运行时的内存消耗
+//            shrinkResources true //启用res资源过滤，会将项目中未使用到的图片变成1x1的小图，从而减少体积
+//            debuggable true
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            //说明so的路径为该libs路径，关联所有地图SDK的so文件
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+    aaptOptions {
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+    }
+
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def fileName = "顺风车管家" + "_V${defaultConfig.versionName}_C${defaultConfig.versionCode}_${getDate()}" + ".apk"
+            outputFileName = fileName
+        }
+    }
+    //use legacy for android 6.0  环信需要
+    useLibrary 'org.apache.http.legacy'
+}
+
+def getDate() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:26.1.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    testCompile 'junit:junit:4.12'
+
+    // 下拉刷新
+
+    //    compile project(path: ':pullToRefresh-library')
+
+    // https://github.com/wyouflf/xUtils3 综合框架
+    implementation 'org.xutils:xutils:3.5.0'
+
+    // Hawk 2.0  地址https://github.com/orhanobut/hawk替代SP
+    implementation 'com.orhanobut:hawk:2.0.1'
+
+    // android 4.4以上沉浸式实现 https://github.com/gyf-dev/ImmersionBar
+    implementation 'com.gyf.immersionbar:immersionbar:2.3.3-beta15'
+
+    // https://github.com/googlesamples/easypermissions 运行时权限管理
+    implementation 'pub.devrel:easypermissions:0.4.3'
+
+    // https://github.com/Bigkoo/Android-PickerView 模仿IOS弹窗,时间选择,二级联动呀等等.自己看网页
+    implementation 'com.contrarywind:Android-PickerView:3.2.6'
+    compile files('libs/BaiduLBS_Android.jar')
+
+    // https://github.com/crazycodeboy/TakePhoto 图片选择压缩------------------
+    implementation 'com.jph.takephoto:takephoto_library:4.0.3'
+
+    //    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    implementation 'com.android.support:recyclerview-v7:25.4.0'
+    compile files('libs/pinyin4j-2.5.0.jar')
+
+    //垂直跑马灯
+    implementation 'com.gongwen:marqueelibrary:1.1.3'
+    implementation 'com.github.RollCretin:LocalDriver:1.0.0'
+    //二维码条形码扫描  https://github.com/bingoogolapple/BGAQRCode-Android
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.9@aar'
+    implementation 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
+    implementation 'com.android.support:design:27.1.1'
+
+    //    compile project(':sdk')
+
+    //配置拆分包
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.github.addappcn:android-pickers:1.0.2'
+    implementation 'com.github.pinguo-zhouwei:EasyBlur:v1.0.0'
+
+    // 崩溃日志显示
+    implementation 'cat.ereza:customactivityoncrash:2.2.0'
+
+    //PushSDK必须依赖基础组件库，所以需要加入对应依赖
+    implementation 'com.umeng.umsdk:common:1.5.4'
+
+    //PushSDK必须依赖utdid库，所以需要加入对应依赖
+
+    //compile 'com.umeng.sdk:utdid:1.1.5.3'
+
+    //PushSDK
+    implementation 'com.umeng.umsdk:push:5.0.2'
+
+    //    //Push统计
+    implementation 'com.umeng.sdk:analytics:7.5.0'
+
+    //Umeng-share集成
+    implementation 'com.umeng.umsdk:share-core:6.9.4'
+    implementation 'com.umeng.umsdk:share-board:6.9.4'
+
+    //    compile 'com.umeng.sdk:share-qq:latest.integration'
+
+    //    compile 'com.umeng.umsdk:share-qq:6.9.4'
+
+    //    compile  'com.umeng.umsdk:share-wx:6.9.4'
+
+    //    //极光IM集成
+
+    //    compile 'cn.jiguang.sdk:jmessage:2.5.0'
+
+    //
+
+    //    // 此处以JMessage 2.5.0 版本为例。
+
+    //    compile 'cn.jiguang.sdk:jcore:1.1.9'
+
+    // 此处以JCore 1.1.9 版本为例。
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.jude:easyrecyclerview:4.2.3'
+    implementation 'com.bm.photoview:library:1.4.1'
+    implementation 'com.blankj:utilcode:1.20.4'
+
+    //图片选择器 https://github.com/LuckSiege/PictureSelector ----------------
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.3'
+
+    //选择器
+    compile('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+
+    //SmartRefreshLayout  https://github.com/scwang90/SmartRefreshLayout
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-5'
+
+    //没有使用特殊Header，可以不加这行
+
+    //textview渐变
+    implementation 'com.betterda.gradenttextview:gradienttextview2:0.0.1'
+
+    //微信支付模块
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+
+    //日期计算框架
+    implementation 'net.danlew:android.joda:2.10.0'
+
+    // 支付宝 SDK AAR 包所需的配置
+    compile(name: 'alipaySdk-15.5.7-20181023110917', ext: 'aar')
+    implementation project(':library')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation('com.alibaba.android:vlayout:1.2.8@aar') {
+        transitive = true
+    }
+
+    // glide图片加载
+
+    //    api 'com.github.bumptech.glide:glide:4.8.0'
+
+    // Glide图形转换工具
+
+    //    api 'jp.wasabeef:glide-transformations:2.0.1'
+    implementation 'com.lzy.widget:view-core:0.2.1'
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+
+    //tablayout可自定义下划线长度 https://github.com/hackware1993/MagicIndicator
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    //https://github.com/cpoopc/ScrollableLayout
+    implementation 'com.github.cpoopc:scrollablelayoutlib:1.0.1'
+
+    //环信 http://docs-im.easemob.com/im/android/sdk/import
+
+    //    implementation 'com.google.android.gms:play-services-gcm:9.4.0'
+
+    //    implementation 'com.hyphenate:hyphenate-sdk:3.3.0'
+    implementation project(':easeui2')
+    implementation 'com.parse:parse-android:1.13.1'
+
+    //九宫格图片 https://github.com/jinyb09017/MutiImgLoader
+    implementation 'com.abbott.mutiimgloader:mutiimgloader:1.0.1'
+
+    //图片加载框架 https://github.com/square/picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+}

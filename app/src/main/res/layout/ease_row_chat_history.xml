@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_itease_layout"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <RelativeLayout
+        android:id="@+id/avatar_container"
+        android:layout_width="67dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
+        <com.windmillsteward.jukutech.activity.chat.widget.EaseImageView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ease_default_avatar" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/avatar_container"
+        android:textColor="@color/color_394043"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="14dp"
+        android:text=""
+        android:textColor="@color/text_9399a5"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/msg_state"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/avatar_container"
+        android:src="@drawable/ease_msg_state_fail_resend"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mentioned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/msg_state"
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:text="@string/were_mentioned"
+        android:textColor="#e84e40"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/time"
+        android:layout_toRightOf="@id/mentioned"
+        android:ellipsize="end"
+        android:padding="7dp"
+        android:singleLine="true"
+        android:textColor="@color/text_9399a5"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/unread_msg_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/message"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/ease_unread_count_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="50dp" >
+
+    <EditText
+        android:id="@+id/et_position_name"
+        android:layout_width="match_parent"
+        android:hint="请输入住人姓名"
+        android:gravity="right"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/text_size_17sp"
+        android:textColorHint="@color/color_text_b3"
+        android:background="@color/color_white"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/color_bg_f0f0"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/common_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_ll_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#23abac"
+            android:orientation="vertical"
+            android:visibility="gone"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon__white_arrow_down"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:text="地区"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/lay_ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_retangle_circle_r3_bg_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/icon_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableRight="@mipmap/icon__white_arrow_down"
+                    android:text="搜索"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:src="@mipmap/icon_scan" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@mipmap/icon_message" />
+
+                <TextView
+                    android:id="@+id/tv_message_count"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignRight="@id/iv_message"
+                    android:background="@drawable/shape_round_solid_red"
+                    android:gravity="center"
+                    android:text="13"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_scroll_to_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/icon_top" />
+
+    <ImageView
+        android:id="@+id/iv_grab_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/icon_grab" />
+</RelativeLayout>

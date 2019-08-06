@@ -1,0 +1,43 @@
+StateButton 用于按钮按下去之后的色值改变,可以百度下其使用方法
+SwipeMenuLayout 侧滑删除可以用这个百度一下使用方法很简单
+首页有一个简单登录示例
+
+————————————————————————————————————————————————————————————————————————————————————————————————————
+xjh的使用文档
+
+xiangjianhai
+
+123456
+
+安卓代码仓库
+http://qishare.cn:3000/shun_shan_dong_feng/android.git
+
+git目录：
+文档（需求原型，技术资料，设计方案等）：
+http://qishare.cn:3000/shun_shan_dong_feng/docs.git
+
+
+ui
+http://qishare.cn:3000/shun_shan_dong_feng/UI.git
+-------------------------------------------------------------------------------------
+PWD：shunfengche2018
+Name：Shen Hao
+Unit：山东顺风车网络科技有限公司
+City：Zibo
+Province：Shandong
+
+255200
+--------------------------------------------------------------------------------------
+
+###############百度地图账号
+18678119607
+sfc3698
+
+
+2.25
+职位详情：没有薪资水平的id；没有工作区域名字；没有发布地区名字；福利id请用数组表示"benefit_ids":"[1,2,3]"；发布失败 {"msg":"服务器内部未知错误","code":10050,"data":{}}
+删除职位报错404：{url='http://shunfengche.qishare.cn:8084/windmillsteward/user_api/talent_post/job/delete_job', params={access_token=bc36c550a45c47968d39fb75870fcc4e, job_id=20}, files=null, headers={user_id=11}}
+
+2.26
+简历详情：没有电话号码；没有工作区域名字；简历id；
+发布也是失败

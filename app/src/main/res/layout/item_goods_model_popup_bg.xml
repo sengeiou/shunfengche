@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tv_text"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:text=""
+    android:layout_margin="5dp"
+    android:textColor="@drawable/select_buyhouse_popup_text"
+    android:background="@drawable/select_goods_model_popup_bg"
+    android:layout_height="wrap_content"/>

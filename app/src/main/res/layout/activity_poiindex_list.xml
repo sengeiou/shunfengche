@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lay_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_them"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/icon__white_arrow_down"
+            android:text="地区"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <LinearLayout
+            android:id="@+id/lay_ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_retangle_circle_r3_bg_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/icon_search" />
+
+            <EditText
+                android:id="@+id/tv_search_hint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:drawableRight="@mipmap/icon__white_arrow_down"
+                android:hint="搜索"
+                android:singleLine="true"
+                android:background="@color/color_white"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:background="@color/color_bg_f0f0"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

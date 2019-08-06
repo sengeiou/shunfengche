@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.windmillsteward.jukutech.activity.newpage.yizhan.yinyuan.ZichanRenzhenFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="13dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="13dp"
+                android:text="审核不通过，点击查看原因"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/text_size_16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.windmillsteward.jukutech.customview.FlyBanner
+                android:id="@+id/flyBanner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:visibility="gone"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg"
+                android:backgroundTint="@color/white"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_fangchan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="* 房产证"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewFc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/color_bg" />
+
+                <TextView
+                    android:id="@+id/tv_xingshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="* 车辆行驶证认证"
+                    android:textColor="#394043"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewXc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:background="@drawable/shape_wenxintishi"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="15dp"
+                    android:text="温馨提示"
+                    android:textColor="#fdbe44"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:text="请认证本人名下的房产和车辆，否则不予通过"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/text_size_13sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="认证费 ¥0.00"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="159dp"
+                android:layout_height="match_parent"
+                android:background="@color/common_color"
+                android:gravity="center"
+                android:text="提交认证"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

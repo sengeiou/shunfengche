@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f7f5f6">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_frame_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptr_duration_to_close="200"
+        app:ptr_duration_to_close_header="1000"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_resistance="1.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.cpoopc.scrollablelayoutlib.ScrollableLayout
+                android:id="@+id/scrollableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.windmillsteward.jukutech.customview.FlyBanner
+                        android:id="@+id/fly_top_anner"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:background="@color/color_white" />
+
+                    <RelativeLayout
+                        android:id="@+id/lay_rl_moduel_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-50dp"
+                        android:background="@drawable/shape_text_white_bg_stro_black"
+                        android:descendantFocusability="blocksDescendants">
+
+                        <com.windmillsteward.jukutech.customview.MaxRecyclerView
+                            android:id="@+id/header_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@color/transparent" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:descendantFocusability="blocksDescendants">
+
+                        <com.windmillsteward.jukutech.customview.MaxRecyclerView
+                            android:id="@+id/middle_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_ll_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/icon_home_header"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/transparent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/iv_hot"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/icon_home_cur_hot" />
+
+                                <TextView
+                                    android:id="@+id/tv_hot"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="当地热门"
+                                    android:textColor="@color/color_black"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <net.lucode.hackware.magicindicator.MagicIndicator
+                            android:id="@+id/magic_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/transparent" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+
+                                <Button
+                                    android:id="@+id/rb_one"
+                                    android:layout_width="47dp"
+                                    android:layout_height="20dp"
+                                    android:background="@mipmap/icon_home_bottom_green"
+                                    android:button="@null"
+                                    android:checked="true"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_10sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/rb_two"
+                                    android:layout_width="47dp"
+                                    android:layout_height="20dp"
+                                    android:background="@mipmap/icon_home_bottom_transparent"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/text_b3aaaa"
+                                    android:textSize="@dimen/text_size_10sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/rb_three"
+                                    android:layout_width="47dp"
+                                    android:layout_height="20dp"
+                                    android:background="@mipmap/icon_home_bottom_transparent"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/text_b3aaaa"
+                                    android:textSize="@dimen/text_size_10sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/rb_four"
+                                    android:layout_width="47dp"
+                                    android:layout_height="20dp"
+                                    android:background="@mipmap/icon_home_bottom_transparent"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/text_b3aaaa"
+                                    android:textSize="@dimen/text_size_10sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="25dp"
+                            android:background="#dde2e7" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hight_padding_50"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="———————————— 我是有底线的 ————————————"
+                    android:textColor="#9298a4"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </com.cpoopc.scrollablelayoutlib.ScrollableLayout>
+
+
+        </LinearLayout>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <include layout="@layout/layout_commen_search_header" />
+</RelativeLayout>
